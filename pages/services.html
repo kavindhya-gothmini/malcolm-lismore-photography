@@ -1,0 +1,2093 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Photography services by Malcolm Lismore, including Scottish landscapes, wildlife, coastal birds, weddings, portraits and special events.">
+
+    <meta name="keywords"
+          content="Scottish photography services, landscape photographer Scotland, wildlife photography, wedding photography, portrait photography, event photography">
+
+    <meta name="author"
+          content="Malcolm Lismore Photography">
+
+    <title>Services | Malcolm Lismore Photography</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         WEBSITE CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="../assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/responsive.css">
+
+
+    <!-- =====================================================
+         SERVICES PAGE CSS
+    ====================================================== -->
+
+    <style>
+
+        /* =====================================================
+           SERVICES HERO
+        ====================================================== */
+
+        .services-hero {
+
+            position: relative;
+
+            min-height: 68vh;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.92),
+                    rgba(0, 0, 0, 0.18)
+                ),
+                url("../assets/images/landscapes/nature photo 3.jpg")
+                center / cover no-repeat;
+        }
+
+
+        .services-hero-content {
+
+            width: 100%;
+
+            padding-top: 180px;
+
+            padding-bottom: 90px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .services-eyebrow {
+
+            margin-bottom: 16px;
+
+            color: var(--color-accent);
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+        }
+
+
+        .services-hero h1 {
+
+            max-width: 900px;
+
+            margin: 0;
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(55px, 8vw, 105px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -2px;
+
+            color: var(--color-white);
+        }
+
+
+        .services-hero h1 span {
+
+            display: block;
+
+            color: var(--color-accent);
+        }
+
+
+        .services-hero-description {
+
+            max-width: 650px;
+
+            margin-top: 28px;
+
+            margin-bottom: 0;
+
+            color: rgba(245, 243, 238, 0.78);
+
+            font-size: 16px;
+
+            font-weight: 300;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ====================================================== */
+
+        .services-breadcrumb {
+
+            position: absolute;
+
+            top: 110px;
+
+            left: 0;
+
+            right: 0;
+
+            z-index: 5;
+        }
+
+
+        .services-breadcrumb a {
+
+            color: rgba(245, 243, 238, 0.65);
+
+            font-size: 10px;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            text-decoration: none;
+
+            transition: color 0.3s ease;
+        }
+
+
+        .services-breadcrumb a:hover {
+
+            color: var(--color-accent);
+        }
+
+
+        .services-breadcrumb span {
+
+            margin: 0 10px;
+
+            color: var(--color-accent);
+        }
+
+
+        .services-breadcrumb strong {
+
+            color: var(--color-white);
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =====================================================
+           INTRODUCTION
+        ====================================================== */
+
+        .services-intro {
+
+            background: var(--color-white);
+
+            text-align: center;
+        }
+
+
+        .services-intro-content {
+
+            max-width: 780px;
+
+            margin: 0 auto;
+        }
+
+
+        .services-intro-content p:last-child {
+
+            max-width: 680px;
+
+            margin: 0 auto;
+
+            color: #6e6b66;
+
+            font-size: 15px;
+
+            font-weight: 300;
+
+            line-height: 1.9;
+        }
+
+
+        /* =====================================================
+           SERVICE CARDS
+        ====================================================== */
+
+        .services-main {
+
+            background: var(--color-white);
+
+            padding-bottom: 120px;
+        }
+
+
+        .service-detail-card {
+
+            position: relative;
+
+            overflow: hidden;
+
+            height: 100%;
+
+            background: #111;
+
+            transition:
+                transform 0.4s ease,
+                box-shadow 0.4s ease;
+        }
+
+
+        .service-detail-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 25px 55px rgba(0, 0, 0, 0.16);
+        }
+
+
+        .service-detail-image {
+
+            position: relative;
+
+            height: 440px;
+
+            overflow: hidden;
+        }
+
+
+        .service-detail-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition:
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+
+        .service-detail-card:hover
+        .service-detail-image img {
+
+            transform: scale(1.06);
+        }
+
+
+        .service-detail-image::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.72),
+                    rgba(0, 0, 0, 0.02) 65%
+                );
+        }
+
+
+        .service-detail-number {
+
+            position: absolute;
+
+            top: 24px;
+
+            left: 24px;
+
+            z-index: 2;
+
+            width: 44px;
+
+            height: 44px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border: 1px solid
+                rgba(255, 255, 255, 0.5);
+
+            border-radius: 50%;
+
+            color: var(--color-white);
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            letter-spacing: 1px;
+        }
+
+
+        .service-detail-image-content {
+
+            position: absolute;
+
+            left: 28px;
+
+            right: 28px;
+
+            bottom: 25px;
+
+            z-index: 3;
+        }
+
+
+        .service-detail-image-content small {
+
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: var(--color-accent);
+
+            font-size: 9px;
+
+            font-weight: 600;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        .service-detail-image-content h3 {
+
+            margin: 0;
+
+            color: var(--color-white);
+
+            font-family: var(--font-heading);
+
+            font-size: 34px;
+
+            font-weight: 500;
+
+            line-height: 1.1;
+        }
+
+
+        .service-detail-body {
+
+            padding: 32px;
+
+            background: var(--color-black);
+
+            color: var(--color-white);
+        }
+
+
+        .service-detail-body p {
+
+            margin: 0;
+
+            color: rgba(255, 255, 255, 0.65);
+
+            font-size: 14px;
+
+            font-weight: 300;
+
+            line-height: 1.8;
+        }
+
+
+        .service-detail-link {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            margin-top: 24px;
+
+            color: var(--color-white);
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            text-decoration: none;
+
+            transition: color 0.3s ease;
+        }
+
+
+        .service-detail-link i {
+
+            transition:
+                transform 0.3s ease;
+        }
+
+
+        .service-detail-link:hover {
+
+            color: var(--color-accent);
+        }
+
+
+        .service-detail-link:hover i {
+
+            transform: translateX(5px);
+        }
+
+
+        /* =====================================================
+           FEATURED SERVICE
+        ====================================================== */
+
+        .service-feature {
+
+            margin-top: 30px;
+
+            position: relative;
+
+            min-height: 560px;
+
+            display: flex;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.9),
+                    rgba(0, 0, 0, 0.35),
+                    rgba(0, 0, 0, 0.05)
+                ),
+                url("../assets/images/weddings/wedding photo 1.jpg")
+                center / cover no-repeat;
+        }
+
+
+        .service-feature-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 620px;
+
+            padding: 80px;
+        }
+
+
+        .service-feature-content .section-eyebrow {
+
+            color: var(--color-accent);
+        }
+
+
+        .service-feature-content h2 {
+
+            margin-bottom: 22px;
+
+            color: var(--color-white);
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(42px, 5vw, 68px);
+
+            font-weight: 500;
+
+            line-height: 1.08;
+        }
+
+
+        .service-feature-content h2 span {
+
+            color: var(--color-accent);
+        }
+
+
+        .service-feature-content p {
+
+            max-width: 520px;
+
+            color: rgba(255, 255, 255, 0.72);
+
+            font-size: 15px;
+
+            font-weight: 300;
+
+            line-height: 1.85;
+        }
+
+
+        /* =====================================================
+           PROCESS
+        ====================================================== */
+
+        .process-section {
+
+            background: #f4f2ee;
+
+            padding: 120px 0;
+        }
+
+
+        .process-heading {
+
+            max-width: 700px;
+
+            margin-bottom: 65px;
+        }
+
+
+        .process-heading h2 {
+
+            margin-bottom: 20px;
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(42px, 5vw, 65px);
+
+            font-weight: 500;
+
+            line-height: 1.1;
+
+            color: var(--color-black);
+        }
+
+
+        .process-heading h2 span {
+
+            color: var(--color-accent);
+        }
+
+
+        .process-heading p {
+
+            max-width: 600px;
+
+            margin: 0;
+
+            color: #6e6b66;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+        }
+
+
+        .process-card {
+
+            position: relative;
+
+            height: 100%;
+
+            padding: 35px 30px;
+
+            background: var(--color-white);
+
+            border: 1px solid rgba(0, 0, 0, 0.07);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+
+        .process-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 18px 40px rgba(0, 0, 0, 0.08);
+        }
+
+
+        .process-number {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 42px;
+
+            height: 42px;
+
+            margin-bottom: 28px;
+
+            border-radius: 50%;
+
+            background: var(--color-black);
+
+            color: var(--color-white);
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            letter-spacing: 1px;
+        }
+
+
+        .process-card h3 {
+
+            margin-bottom: 14px;
+
+            font-family: var(--font-heading);
+
+            font-size: 27px;
+
+            font-weight: 500;
+        }
+
+
+        .process-card p {
+
+            margin: 0;
+
+            color: #6e6b66;
+
+            font-size: 14px;
+
+            font-weight: 300;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           CTA
+        ====================================================== */
+
+        .services-cta {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 125px 0;
+
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.84),
+                    rgba(0, 0, 0, 0.84)
+                ),
+                url("../assets/images/landscapes/nature photo 3.jpg")
+                center / cover no-repeat;
+
+            text-align: center;
+        }
+
+
+        .services-cta .section-eyebrow {
+
+            color: var(--color-accent);
+        }
+
+
+        .services-cta h2 {
+
+            max-width: 850px;
+
+            margin: 0 auto 25px;
+
+            color: var(--color-white);
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(42px, 6vw, 72px);
+
+            font-weight: 500;
+
+            line-height: 1.08;
+        }
+
+
+        .services-cta h2 span {
+
+            color: var(--color-accent);
+        }
+
+
+        .services-cta p {
+
+            max-width: 580px;
+
+            margin: 0 auto 34px;
+
+            color: rgba(255, 255, 255, 0.7);
+
+            font-size: 15px;
+
+            font-weight: 300;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 991.98px) {
+
+            .services-hero {
+
+                min-height: 62vh;
+            }
+
+
+            .service-detail-image {
+
+                height: 380px;
+            }
+
+
+            .service-feature {
+
+                min-height: 500px;
+            }
+
+
+            .service-feature-content {
+
+                padding: 60px;
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+
+            .services-hero {
+
+                min-height: 68vh;
+            }
+
+
+            .services-breadcrumb {
+
+                top: 95px;
+            }
+
+
+            .services-hero-content {
+
+                padding-top: 170px;
+
+                padding-bottom: 65px;
+            }
+
+
+            .services-hero h1 {
+
+                font-size: 52px;
+
+                letter-spacing: -1px;
+            }
+
+
+            .services-hero-description {
+
+                font-size: 14px;
+
+                line-height: 1.7;
+            }
+
+
+            .service-detail-image {
+
+                height: 340px;
+            }
+
+
+            .service-detail-body {
+
+                padding: 27px;
+            }
+
+
+            .service-detail-image-content h3 {
+
+                font-size: 29px;
+            }
+
+
+            .service-feature {
+
+                min-height: 560px;
+
+                align-items: flex-end;
+
+                background:
+                    linear-gradient(
+                        to top,
+                        rgba(0, 0, 0, 0.94),
+                        rgba(0, 0, 0, 0.15)
+                    ),
+                    url("../assets/images/weddings/wedding photo 1.jpg")
+                    center / cover no-repeat;
+            }
+
+
+            .service-feature-content {
+
+                padding: 45px 28px;
+            }
+
+
+            .process-section {
+
+                padding: 85px 0;
+            }
+
+
+            .services-cta {
+
+                padding: 90px 0;
+            }
+
+        }
+
+
+        @media (max-width: 575.98px) {
+
+            .services-hero h1 {
+
+                font-size: 43px;
+            }
+
+
+            .services-hero-description {
+
+                font-size: 13px;
+            }
+
+
+            .services-breadcrumb a,
+            .services-breadcrumb strong {
+
+                font-size: 9px;
+            }
+
+
+            .service-detail-image {
+
+                height: 300px;
+            }
+
+
+            .service-detail-image-content {
+
+                left: 20px;
+
+                right: 20px;
+
+                bottom: 20px;
+            }
+
+
+            .service-detail-image-content h3 {
+
+                font-size: 27px;
+            }
+
+
+            .service-feature-content h2 {
+
+                font-size: 42px;
+            }
+
+
+            .service-feature-content {
+
+                padding: 40px 22px;
+            }
+
+
+            .process-card {
+
+                padding: 28px 24px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="site-header">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+
+            <!-- BRAND -->
+
+            <a class="navbar-brand"
+               href="../index.html">
+
+                <span class="brand-name">
+                    MALCOLM LISMORE
+                </span>
+
+                <span class="brand-subtitle">
+                    PHOTOGRAPHY
+                </span>
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- NAVIGATION -->
+
+            <div class="collapse navbar-collapse"
+                 id="mainNavigation">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="../index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="portfolio.html">
+
+                            Portfolio
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active"
+                           href="services.html">
+
+                            Services
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="pricing.html">
+
+                            Pricing
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item ms-lg-3">
+
+                        <a class="nav-link enquiry-nav-link"
+                           href="enquiry.html">
+
+                            Make an Enquiry
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+
+<section class="services-hero">
+
+
+    <!-- BREADCRUMB -->
+
+    <div class="services-breadcrumb">
+
+        <div class="container">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <span>/</span>
+
+            <strong>
+                Services
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO CONTENT -->
+
+    <div class="container">
+
+        <div class="services-hero-content">
+
+            <p class="services-eyebrow">
+                PHOTOGRAPHY SERVICES
+            </p>
+
+
+            <h1>
+
+                Photography for
+                <span>every story.</span>
+
+            </h1>
+
+
+            <p class="services-hero-description">
+
+                From dramatic Scottish landscapes and
+                wildlife to intimate weddings, portraits
+                and special occasions, every assignment
+                is approached with care and creativity.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     INTRODUCTION
+========================================================= -->
+
+<section class="services-intro section-padding">
+
+    <div class="container">
+
+        <div class="services-intro-content">
+
+            <p class="section-eyebrow">
+                WHAT I OFFER
+            </p>
+
+
+            <h2 class="section-title">
+
+                Images with
+                <span>meaning.</span>
+
+            </h2>
+
+
+            <p>
+
+                Whether you are looking for a dramatic
+                landscape photograph, natural wildlife
+                imagery, timeless wedding photographs or
+                portraits that feel authentic, each
+                session is carefully planned around your
+                vision.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section class="services-main">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <!-- =================================================
+                 LANDSCAPES
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <article class="service-detail-card">
+
+
+                    <div class="service-detail-image">
+
+                        <img
+                            src="../assets/images/landscapes/nature photo 3.jpg"
+                            alt="Scottish landscape photography"
+                            loading="lazy">
+
+
+                        <span class="service-detail-number">
+                            01
+                        </span>
+
+
+                        <div class="service-detail-image-content">
+
+                            <small>
+                                Landscape Photography
+                            </small>
+
+                            <h3>
+                                Scottish Landscapes
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-detail-body">
+
+                        <p>
+
+                            Dramatic mountains, coastlines,
+                            forests and remote landscapes
+                            photographed across Scotland.
+                            Perfect for personal collections,
+                            commercial use, prints and
+                            editorial projects.
+
+                        </p>
+
+
+                        <a href="landscapes.html"
+                           class="service-detail-link">
+
+                            View Landscape Portfolio
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =================================================
+                 WILDLIFE
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <article class="service-detail-card">
+
+
+                    <div class="service-detail-image">
+
+                        <img
+                            src="../assets/images/wildlife/wild image 6.png"
+                            alt="Scottish wildlife photography"
+                            loading="lazy">
+
+
+                        <span class="service-detail-number">
+                            02
+                        </span>
+
+
+                        <div class="service-detail-image-content">
+
+                            <small>
+                                Wildlife Photography
+                            </small>
+
+                            <h3>
+                                Scotland's Wildlife
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-detail-body">
+
+                        <p>
+
+                            Authentic wildlife photography
+                            capturing Scotland's remarkable
+                            animals in their natural
+                            surroundings, from remote
+                            landscapes to coastal habitats.
+
+                        </p>
+
+
+                        <a href="wildlife.html"
+                           class="service-detail-link">
+
+                            View Wildlife Portfolio
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =================================================
+                 COASTAL BIRDS
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <article class="service-detail-card">
+
+
+                    <div class="service-detail-image">
+
+                        <img
+                            src="../assets/images/birds/wild image 1.jpg"
+                            alt="Scottish coastal bird photography"
+                            loading="lazy">
+
+
+                        <span class="service-detail-number">
+                            03
+                        </span>
+
+
+                        <div class="service-detail-image-content">
+
+                            <small>
+                                Bird Photography
+                            </small>
+
+                            <h3>
+                                Coastal Birds
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-detail-body">
+
+                        <p>
+
+                            Detailed photographs of coastal
+                            birds and seabirds, capturing
+                            movement, character and the
+                            atmosphere of Scotland's coastline.
+
+                        </p>
+
+
+                        <a href="birds.html"
+                           class="service-detail-link">
+
+                            View Bird Portfolio
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =================================================
+                 WEDDINGS
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <article class="service-detail-card">
+
+
+                    <div class="service-detail-image">
+
+                        <img
+                            src="../assets/images/weddings/wedding photo 1.jpg"
+                            alt="Scottish wedding photography"
+                            loading="lazy">
+
+
+                        <span class="service-detail-number">
+                            04
+                        </span>
+
+
+                        <div class="service-detail-image-content">
+
+                            <small>
+                                Wedding Photography
+                            </small>
+
+                            <h3>
+                                Weddings & Love Stories
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-detail-body">
+
+                        <p>
+
+                            Natural and timeless wedding
+                            photography focused on the
+                            genuine emotions, details and
+                            moments that make your day unique.
+
+                        </p>
+
+
+                        <a href="weddings.html"
+                           class="service-detail-link">
+
+                            View Wedding Portfolio
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =================================================
+                 PORTRAITS
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <article class="service-detail-card">
+
+
+                    <div class="service-detail-image">
+
+                        <img
+                            src="../assets/images/portraits/portrait photo 1.jpg"
+                            alt="Portrait photography"
+                            loading="lazy">
+
+
+                        <span class="service-detail-number">
+                            05
+                        </span>
+
+
+                        <div class="service-detail-image-content">
+
+                            <small>
+                                Portrait Photography
+                            </small>
+
+                            <h3>
+                                Portrait Stories
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-detail-body">
+
+                        <p>
+
+                            Relaxed, natural portraits for
+                            individuals, families and
+                            professional purposes, created
+                            in locations where you feel
+                            comfortable.
+
+                        </p>
+
+
+                        <a href="portraits.html"
+                           class="service-detail-link">
+
+                            View Portrait Portfolio
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =================================================
+                 EVENTS
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <article class="service-detail-card">
+
+
+                    <div class="service-detail-image">
+
+                        <img
+                            src="../assets/images/events/event 1.png"
+                            alt="Special event photography"
+                            loading="lazy">
+
+
+                        <span class="service-detail-number">
+                            06
+                        </span>
+
+
+                        <div class="service-detail-image-content">
+
+                            <small>
+                                Event Photography
+                            </small>
+
+                            <h3>
+                                Events & Celebrations
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-detail-body">
+
+                        <p>
+
+                            Professional coverage for
+                            celebrations, private events,
+                            community occasions and
+                            memorable gatherings.
+
+                        </p>
+
+
+                        <a href="events.html"
+                           class="service-detail-link">
+
+                            View Event Portfolio
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FEATURED WEDDING SERVICE
+        ================================================== -->
+
+        <div class="service-feature">
+
+            <div class="service-feature-content">
+
+                <p class="section-eyebrow">
+                    WEDDINGS & SPECIAL MOMENTS
+                </p>
+
+
+                <h2>
+
+                    Your day.
+                    <span>Your story.</span>
+
+                </h2>
+
+
+                <p>
+
+                    Every wedding is different. My approach
+                    is centred around capturing the moments
+                    naturally — from the excitement of
+                    getting ready to the quiet moments,
+                    laughter and celebrations shared with
+                    the people who matter most.
+
+                </p>
+
+
+                <a href="enquiry.html"
+                   class="btn btn-light-custom mt-3">
+
+                    Discuss Your Wedding
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROCESS
+========================================================= -->
+
+<section class="process-section">
+
+    <div class="container">
+
+
+        <div class="process-heading">
+
+            <p class="section-eyebrow">
+                THE EXPERIENCE
+            </p>
+
+
+            <h2>
+
+                Simple from
+                <span>start to finish.</span>
+
+            </h2>
+
+
+            <p>
+
+                Every project begins with understanding
+                what you need and ends with photographs
+                carefully prepared for you to enjoy.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- STEP 1 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="process-card">
+
+                    <span class="process-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Enquire
+                    </h3>
+
+                    <p>
+
+                        Tell me about your photography
+                        project, event or special occasion.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 2 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="process-card">
+
+                    <span class="process-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Plan
+                    </h3>
+
+                    <p>
+
+                        We discuss your requirements,
+                        location, timing and the style
+                        of photography you are looking for.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 3 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="process-card">
+
+                    <span class="process-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Photograph
+                    </h3>
+
+                    <p>
+
+                        The session or event is captured
+                        naturally with attention to detail,
+                        atmosphere and emotion.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 4 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="process-card">
+
+                    <span class="process-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Deliver
+                    </h3>
+
+                    <p>
+
+                        Your photographs are carefully
+                        selected and prepared for final
+                        delivery.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="services-cta">
+
+    <div class="container">
+
+        <p class="section-eyebrow">
+            YOUR STORY
+        </p>
+
+
+        <h2>
+
+            Have a moment worth
+            <span>capturing?</span>
+
+        </h2>
+
+
+        <p>
+
+            Whether you are planning a wedding,
+            arranging a portrait session or looking
+            for photography of Scotland's landscapes
+            and wildlife, let's talk about your ideas.
+
+        </p>
+
+
+        <a href="enquiry.html"
+           class="btn btn-light-custom">
+
+            Make an Enquiry
+
+            <i class="bi bi-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="row gy-5">
+
+
+            <!-- BRAND -->
+
+            <div class="col-lg-5">
+
+                <a href="../index.html"
+                   class="footer-brand">
+
+                    <span>
+                        MALCOLM LISMORE
+                    </span>
+
+                    <small>
+                        PHOTOGRAPHY
+                    </small>
+
+                </a>
+
+
+                <p class="footer-description">
+
+                    Scottish landscape, wildlife,
+                    wedding, portrait and event
+                    photography.
+
+                </p>
+
+            </div>
+
+
+            <!-- EXPLORE -->
+
+            <div class="col-6 col-lg-2">
+
+                <h4>
+                    Explore
+                </h4>
+
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="portfolio.html">
+                            Portfolio
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="col-6 col-lg-2">
+
+                <h4>
+                    Information
+                </h4>
+
+
+                <ul>
+
+                    <li>
+                        <a href="pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="enquiry.html">
+                            Enquire
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SOCIAL -->
+
+            <div class="col-lg-3">
+
+                <h4>
+                    Follow
+                </h4>
+
+
+                <div class="social-links">
+
+                    <a href="#"
+                       aria-label="Instagram">
+
+                        <i class="bi bi-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                       aria-label="Facebook">
+
+                        <i class="bi bi-facebook"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © <span id="currentYear"></span>
+                Malcolm Lismore Photography.
+                All rights reserved.
+
+            </p>
+
+
+            <p>
+                Designed & developed with care.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- =========================================================
+     CUSTOM JS
+========================================================= -->
+
+<script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>
+

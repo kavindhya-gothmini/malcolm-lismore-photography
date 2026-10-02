@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore Malcolm Lismore's Scottish landscape photography, featuring the Highlands, mountains, coastlines and wild landscapes of Scotland.">
+
+    <meta name="keywords"
+          content="Scottish landscape photography, Scotland photography, Highland photography, mountain photography, Malcolm Lismore">
+
+    <meta name="author"
+          content="Malcolm Lismore Photography">
+
+    <title>Landscapes | Malcolm Lismore Photography</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- BOOTSTRAP -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+
+    <!-- BOOTSTRAP ICONS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+          rel="stylesheet">
+
+
+    <!-- WEBSITE CSS -->
+
+    <link rel="stylesheet"
+          href="../assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/responsive.css">
+
+
+    <style>
+
+        .category-hero {
+
+            position: relative;
+
+            min-height: 72vh;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0,0,0,.92),
+                    rgba(0,0,0,.12)
+                ),
+                url("../assets/images/landscapes/nature photo 3.jpg")
+                center / cover no-repeat;
+
+        }
+
+
+        .category-hero-content {
+
+            width: 100%;
+
+            padding-top: 180px;
+
+            padding-bottom: 95px;
+
+        }
+
+
+        .category-eyebrow {
+
+            margin-bottom: 15px;
+
+            color: var(--color-accent);
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .category-hero h1 {
+
+            margin: 0;
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(55px, 8vw, 105px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -2px;
+
+        }
+
+
+        .category-hero h1 span {
+
+            display: block;
+
+            color: var(--color-accent);
+
+        }
+
+
+        .category-description {
+
+            max-width: 680px;
+
+            margin-top: 25px;
+
+            margin-bottom: 0;
+
+            color: rgba(245,243,238,.76);
+
+            font-size: 16px;
+
+            font-weight: 300;
+
+            line-height: 1.8;
+
+        }
+
+
+        .category-breadcrumb {
+
+            position: absolute;
+
+            top: 110px;
+
+            left: 0;
+
+            right: 0;
+
+            z-index: 5;
+
+        }
+
+
+        .category-breadcrumb a {
+
+            color: rgba(245,243,238,.65);
+
+            font-size: 10px;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            text-decoration: none;
+
+        }
+
+
+        .category-breadcrumb a:hover {
+
+            color: var(--color-accent);
+
+        }
+
+
+        .category-breadcrumb span {
+
+            margin: 0 10px;
+
+            color: var(--color-accent);
+
+        }
+
+
+        .category-breadcrumb strong {
+
+            color: white;
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .category-intro {
+
+            background: var(--color-white);
+
+            color: var(--color-black);
+
+            text-align: center;
+
+        }
+
+
+        .category-intro-content {
+
+            max-width: 780px;
+
+            margin: auto;
+
+        }
+
+
+        .category-intro-content p {
+
+            color: #6e6b66;
+
+            font-size: 15px;
+
+            font-weight: 300;
+
+            line-height: 1.9;
+
+        }
+
+
+        .category-gallery-section {
+
+            padding-top: 25px;
+
+            padding-bottom: 120px;
+
+            background: var(--color-white);
+
+        }
+
+
+        .category-gallery {
+
+            columns: 3 320px;
+
+            column-gap: 18px;
+
+        }
+
+
+        .gallery-item {
+
+            position: relative;
+
+            display: block;
+
+            width: 100%;
+
+            margin-bottom: 18px;
+
+            break-inside: avoid;
+
+            overflow: hidden;
+
+            cursor: pointer;
+
+            background: #151515;
+
+        }
+
+
+        .gallery-item img {
+
+            display: block;
+
+            width: 100%;
+
+            height: auto;
+
+            transition:
+                transform .8s cubic-bezier(.22,1,.36,1),
+                filter .5s ease;
+
+        }
+
+
+        .gallery-item:hover img {
+
+            transform: scale(1.05);
+
+            filter: brightness(.65);
+
+        }
+
+
+        .gallery-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            justify-content: space-between;
+
+            padding: 25px;
+
+            opacity: 0;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0,0,0,.78),
+                    transparent 55%
+                );
+
+            transition: opacity .4s ease;
+
+        }
+
+
+        .gallery-item:hover .gallery-overlay {
+
+            opacity: 1;
+
+        }
+
+
+        .gallery-title {
+
+            color: white;
+
+            font-family: var(--font-heading);
+
+            font-size: 23px;
+
+            font-weight: 500;
+
+        }
+
+
+        .gallery-category {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: var(--color-accent);
+
+            font-size: 9px;
+
+            font-weight: 600;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .gallery-icon {
+
+            width: 42px;
+
+            height: 42px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border: 1px solid rgba(255,255,255,.55);
+
+            border-radius: 50%;
+
+            color: white;
+
+            font-size: 17px;
+
+        }
+
+
+        .category-cta {
+
+            padding: 120px 0;
+
+            background: var(--color-black);
+
+            text-align: center;
+
+        }
+
+
+        .category-cta h2 {
+
+            max-width: 800px;
+
+            margin: 0 auto 25px;
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(42px,6vw,70px);
+
+            font-weight: 500;
+
+            line-height: 1.1;
+
+        }
+
+
+        .category-cta h2 span {
+
+            color: var(--color-accent);
+
+        }
+
+
+        .category-cta p {
+
+            max-width: 570px;
+
+            margin: 0 auto 32px;
+
+            color: var(--color-text-muted);
+
+            font-size: 15px;
+
+            font-weight: 300;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* LIGHTBOX */
+
+        .lightbox {
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 9999;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 30px;
+
+            visibility: hidden;
+
+            opacity: 0;
+
+            background: rgba(5,5,5,.96);
+
+            transition: opacity .35s ease, visibility .35s ease;
+
+        }
+
+
+        .lightbox.active {
+
+            visibility: visible;
+
+            opacity: 1;
+
+        }
+
+
+        .lightbox-content {
+
+            width: min(1200px,94vw);
+
+            height: min(85vh,900px);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            position: relative;
+
+        }
+
+
+        .lightbox-image {
+
+            max-width: 100%;
+
+            max-height: 100%;
+
+            object-fit: contain;
+
+            box-shadow: 0 20px 80px rgba(0,0,0,.55);
+
+        }
+
+
+        .lightbox-button {
+
+            position: fixed;
+
+            z-index: 10001;
+
+            width: 50px;
+
+            height: 50px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border: 1px solid rgba(255,255,255,.25);
+
+            border-radius: 50%;
+
+            background: rgba(0,0,0,.35);
+
+            color: white;
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            transition: .3s ease;
+
+        }
+
+
+        .lightbox-button:hover {
+
+            border-color: var(--color-accent);
+
+            color: var(--color-accent);
+
+        }
+
+
+        .lightbox-close {
+
+            top: 25px;
+
+            right: 30px;
+
+        }
+
+
+        .lightbox-prev {
+
+            left: 25px;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+        }
+
+
+        .lightbox-next {
+
+            right: 25px;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+        }
+
+
+        .lightbox-caption {
+
+            position: absolute;
+
+            bottom: -50px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            color: rgba(255,255,255,.8);
+
+            font-size: 10px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            white-space: nowrap;
+
+        }
+
+
+        @media(max-width:991.98px) {
+
+            .category-gallery {
+
+                columns: 2 280px;
+
+            }
+
+        }
+
+
+        @media(max-width:767.98px) {
+
+            .category-hero {
+
+                min-height: 65vh;
+
+            }
+
+            .category-breadcrumb {
+
+                top: 95px;
+
+            }
+
+            .category-hero-content {
+
+                padding-top: 170px;
+
+                padding-bottom: 60px;
+
+            }
+
+            .category-hero h1 {
+
+                font-size: 52px;
+
+            }
+
+            .category-description {
+
+                font-size: 14px;
+
+            }
+
+            .gallery-overlay {
+
+                padding: 15px;
+
+            }
+
+            .gallery-title {
+
+                font-size: 18px;
+
+            }
+
+        }
+
+
+        @media(max-width:575.98px) {
+
+            .category-hero h1 {
+
+                font-size: 44px;
+
+            }
+
+            .category-gallery {
+
+                columns: 1;
+
+            }
+
+            .gallery-item {
+
+                margin-bottom: 10px;
+
+            }
+
+            .lightbox-content {
+
+                width: 92vw;
+
+                height: 75vh;
+
+            }
+
+            .lightbox-prev {
+
+                left: 10px;
+
+            }
+
+            .lightbox-next {
+
+                right: 10px;
+
+            }
+
+            .lightbox-close {
+
+                top: 15px;
+
+                right: 15px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="../index.html">
+
+<span class="brand-name">MALCOLM LISMORE</span>
+
+<span class="brand-subtitle">PHOTOGRAPHY</span>
+
+</a>
+
+
+<button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavigation">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+<div class="collapse navbar-collapse" id="mainNavigation">
+
+<ul class="navbar-nav ms-auto align-items-lg-center">
+
+<li class="nav-item">
+<a class="nav-link" href="../index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="portfolio.html">Portfolio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="services.html">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="pricing.html">Pricing</a>
+</li>
+
+<li class="nav-item ms-lg-3">
+<a class="nav-link enquiry-nav-link" href="enquiry.html">
+Make an Enquiry
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<main>
+
+
+<section class="category-hero">
+
+<div class="category-breadcrumb">
+
+<div class="container">
+
+<a href="../index.html">Home</a>
+
+<span>/</span>
+
+<a href="portfolio.html">Portfolio</a>
+
+<span>/</span>
+
+<strong>Landscapes</strong>
+
+</div>
+
+</div>
+
+
+<div class="container">
+
+<div class="category-hero-content">
+
+<p class="category-eyebrow">
+SCOTTISH LANDSCAPES
+</p>
+
+<h1>
+Wild places.
+<span>Quiet moments.</span>
+</h1>
+
+<p class="category-description">
+
+A collection of Scottish landscapes,
+from dramatic Highland scenery and
+mountain horizons to quiet natural
+moments found across the country.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="category-intro section-padding">
+
+<div class="container">
+
+<div class="category-intro-content">
+
+<p class="section-eyebrow">
+LANDSCAPE COLLECTION
+</p>
+
+<h2 class="section-title">
+Scotland through
+<span>my lens.</span>
+</h2>
+
+<p>
+
+The Scottish landscape is constantly changing.
+Light, weather, season and atmosphere transform
+even the most familiar places. These photographs
+capture some of those fleeting moments.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="category-gallery-section">
+
+<div class="container">
+
+<div class="category-gallery">
+
+
+<article class="gallery-item"
+         data-title="Nature Never Goes Out of Style">
+
+<img src="../assets/images/landscapes/nature photo 1.jpg"
+     alt="Scottish landscape"
+     loading="lazy">
+
+<div class="gallery-overlay">
+
+<div>
+<span class="gallery-category">Landscapes</span>
+<span class="gallery-title">Nature Never Goes Out of Style</span>
+</div>
+
+<span class="gallery-icon">
+<i class="bi bi-plus-lg"></i>
+</span>
+
+</div>
+
+</article>
+
+
+<article class="gallery-item"
+         data-title="Highland Wilderness">
+
+<img src="../assets/images/landscapes/nature photo 2.jpg"
+     alt="Highland wilderness"
+     loading="lazy">
+
+<div class="gallery-overlay">
+
+<div>
+<span class="gallery-category">Landscapes</span>
+<span class="gallery-title">Highland Wilderness</span>
+</div>
+
+<span class="gallery-icon">
+<i class="bi bi-plus-lg"></i>
+</span>
+
+</div>
+
+</article>
+
+
+<article class="gallery-item"
+         data-title="Where Nature's Stillness Speaks">
+
+<img src="../assets/images/landscapes/nature photo 3.jpg"
+     alt="Wild Scotland landscape"
+     loading="lazy">
+
+<div class="gallery-overlay">
+
+<div>
+<span class="gallery-category">Landscapes</span>
+<span class="gallery-title">Where Nature's Stillness Speaks</span>
+</div>
+
+<span class="gallery-icon">
+<i class="bi bi-plus-lg"></i>
+</span>
+
+</div>
+
+</article>
+
+
+<article class="gallery-item"
+         data-title="Capturing the Planet">
+
+<img src="../assets/images/landscapes/nature photo 7.jpg"
+     alt="Scottish landscape"
+     loading="lazy">
+
+<div class="gallery-overlay">
+
+<div>
+<span class="gallery-category">Landscapes</span>
+<span class="gallery-title">Capturing the Planet</span>
+</div>
+
+<span class="gallery-icon">
+<i class="bi bi-plus-lg"></i>
+</span>
+
+</div>
+
+</article>
+
+
+<article class="gallery-item"
+         data-title="Majesty in Wild Spaces">
+
+<img src="../assets/images/landscapes/nature photo 4.jpg"
+     alt="Scottish wilderness"
+     loading="lazy">
+
+<div class="gallery-overlay">
+
+<div>
+<span class="gallery-category">Landscapes</span>
+<span class="gallery-title">Majesty in Wild Spaces</span>
+</div>
+
+<span class="gallery-icon">
+<i class="bi bi-plus-lg"></i>
+</span>
+
+</div>
+
+</article>
+
+
+<article class="gallery-item"
+         data-title="Breathtaking Vistas">
+
+<img src="../assets/images/landscapes/nature photo 5.jpg"
+     alt="Scottish vista"
+     loading="lazy">
+
+<div class="gallery-overlay">
+
+<div>
+<span class="gallery-category">Landscapes</span>
+<span class="gallery-title">Breathtaking Vistas</span>
+</div>
+
+<span class="gallery-icon">
+<i class="bi bi-plus-lg"></i>
+</span>
+
+</div>
+
+</article>
+
+
+<article class="gallery-item"
+         data-title="Timeless Beauty">
+
+<img src="../assets/images/landscapes/nature photo 6.jpg"
+     alt="Scottish natural scenery"
+     loading="lazy">
+
+<div class="gallery-overlay">
+
+<div>
+<span class="gallery-category">Landscapes</span>
+<span class="gallery-title">Timeless Beauty</span>
+</div>
+
+<span class="gallery-icon">
+<i class="bi bi-plus-lg"></i>
+</span>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="category-cta">
+
+<div class="container">
+
+<p class="section-eyebrow">YOUR STORY</p>
+
+<h2>
+Have a moment worth
+<span>remembering?</span>
+</h2>
+
+<p>
+Let's create photographs that preserve
+the atmosphere and emotion of your
+own special moments.
+</p>
+
+<a href="enquiry.html"
+   class="btn btn-light-custom">
+
+Make an Enquiry
+
+<i class="bi bi-arrow-right"></i>
+
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+<div class="container">
+
+<div class="row gy-5">
+
+<div class="col-lg-5">
+
+<a href="../index.html" class="footer-brand">
+
+<span>MALCOLM LISMORE</span>
+
+<small>PHOTOGRAPHY</small>
+
+</a>
+
+<p class="footer-description">
+Scottish landscape, wildlife, wedding,
+portrait and event photography.
+</p>
+
+</div>
+
+
+<div class="col-6 col-lg-2">
+
+<h4>Explore</h4>
+
+<ul>
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="portfolio.html">Portfolio</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="col-6 col-lg-2">
+
+<h4>Information</h4>
+
+<ul>
+
+<li><a href="pricing.html">Pricing</a></li>
+
+<li><a href="enquiry.html">Enquire</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="col-lg-3">
+
+<h4>Follow</h4>
+
+<div class="social-links">
+
+<a href="#" aria-label="Instagram">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="#" aria-label="Facebook">
+<i class="bi bi-facebook"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<p>
+© <span id="currentYear"></span>
+Malcolm Lismore Photography.
+All rights reserved.
+</p>
+
+<p>
+Designed & developed with care.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox"
+     id="lightbox"
+     aria-hidden="true">
+
+<button class="lightbox-button lightbox-close"
+        id="lightboxClose"
+        type="button">
+
+<i class="bi bi-x-lg"></i>
+
+</button>
+
+
+<button class="lightbox-button lightbox-prev"
+        id="lightboxPrev"
+        type="button">
+
+<i class="bi bi-chevron-left"></i>
+
+</button>
+
+
+<div class="lightbox-content">
+
+<img id="lightboxImage"
+     class="lightbox-image"
+     src=""
+     alt="">
+
+<div id="lightboxCaption"
+     class="lightbox-caption">
+</div>
+
+</div>
+
+
+<button class="lightbox-button lightbox-next"
+        id="lightboxNext"
+        type="button">
+
+<i class="bi bi-chevron-right"></i>
+
+</button>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets/js/main.js"></script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const items =
+        Array.from(document.querySelectorAll(".gallery-item"));
+
+    const lightbox =
+        document.getElementById("lightbox");
+
+    const image =
+        document.getElementById("lightboxImage");
+
+    const caption =
+        document.getElementById("lightboxCaption");
+
+    const close =
+        document.getElementById("lightboxClose");
+
+    const previous =
+        document.getElementById("lightboxPrev");
+
+    const next =
+        document.getElementById("lightboxNext");
+
+    let currentIndex = 0;
+
+
+    function openLightbox(index) {
+
+        currentIndex = index;
+
+        updateLightbox();
+
+        lightbox.classList.add("active");
+
+        lightbox.setAttribute("aria-hidden", "false");
+
+        document.body.style.overflow = "hidden";
+
+    }
+
+
+    function updateLightbox() {
+
+        const item = items[currentIndex];
+
+        const img = item.querySelector("img");
+
+        image.src = img.src;
+
+        image.alt = img.alt;
+
+        caption.textContent =
+            "Landscapes — " +
+            item.dataset.title;
+
+    }
+
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("active");
+
+        lightbox.setAttribute("aria-hidden", "true");
+
+        document.body.style.overflow = "";
+
+    }
+
+
+    function showPrevious() {
+
+        currentIndex--;
+
+        if (currentIndex < 0) {
+
+            currentIndex = items.length - 1;
+
+        }
+
+        updateLightbox();
+
+    }
+
+
+    function showNext() {
+
+        currentIndex++;
+
+        if (currentIndex >= items.length) {
+
+            currentIndex = 0;
+
+        }
+
+        updateLightbox();
+
+    }
+
+
+    items.forEach(function (item, index) {
+
+        item.addEventListener("click", function () {
+
+            openLightbox(index);
+
+        });
+
+    });
+
+
+    close.addEventListener("click", closeLightbox);
+
+    previous.addEventListener("click", showPrevious);
+
+    next.addEventListener("click", showNext);
+
+
+    lightbox.addEventListener("click", function (event) {
+
+        if (event.target === lightbox) {
+
+            closeLightbox();
+
+        }
+
+    });
+
+
+    document.addEventListener("keydown", function (event) {
+
+        if (!lightbox.classList.contains("active")) {
+
+            return;
+
+        }
+
+        if (event.key === "Escape") {
+
+            closeLightbox();
+
+        }
+
+        if (event.key === "ArrowLeft") {
+
+            showPrevious();
+
+        }
+
+        if (event.key === "ArrowRight") {
+
+            showNext();
+
+        }
+
+    });
+
+
+    const year =
+        document.getElementById("currentYear");
+
+    if (year) {
+
+        year.textContent =
+            new Date().getFullYear();
+
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,2898 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore the photography portfolio of Malcolm Lismore, featuring Scottish landscapes, wildlife, coastal birds, weddings, portraits and special events.">
+
+    <meta name="keywords"
+          content="Scottish photography portfolio, landscape photography, wildlife photography, wedding photography, portrait photography, Malcolm Lismore">
+
+    <meta name="author"
+          content="Malcolm Lismore Photography">
+
+    <meta name="theme-color"
+          content="#111111">
+
+    <title>Portfolio | Malcolm Lismore Photography</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         WEBSITE CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="../assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/responsive.css">
+
+
+    <!-- =====================================================
+         PORTFOLIO PAGE CSS
+    ====================================================== -->
+
+    <style>
+
+        /* =====================================================
+           GLOBAL PAGE SETTINGS
+        ====================================================== */
+
+        .portfolio-page {
+            overflow-x: hidden;
+        }
+
+
+        /* =====================================================
+           PORTFOLIO HERO
+        ====================================================== */
+
+        .portfolio-hero {
+
+            position: relative;
+
+            min-height: 78vh;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.20) 0%,
+                    rgba(0, 0, 0, 0.38) 40%,
+                    rgba(0, 0, 0, 0.92) 100%
+                ),
+                url("../assets/images/landscapes/nature photo 3.jpg")
+                center center / cover no-repeat;
+
+        }
+
+
+        .portfolio-hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.18),
+                    transparent 65%
+                );
+
+        }
+
+
+        .portfolio-hero-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+            padding-top: 190px;
+
+            padding-bottom: 105px;
+
+        }
+
+
+        .portfolio-eyebrow {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            margin: 0 0 20px;
+
+            color: var(--color-accent);
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            letter-spacing: 3px;
+
+            line-height: 1.4;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .portfolio-eyebrow::before {
+
+            content: "";
+
+            width: 35px;
+
+            height: 1px;
+
+            background: var(--color-accent);
+
+        }
+
+
+        .portfolio-hero h1 {
+
+            max-width: 950px;
+
+            margin: 0;
+
+            color: var(--color-white);
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(52px, 7vw, 100px);
+
+            font-weight: 500;
+
+            line-height: 0.98;
+
+            letter-spacing: -2.5px;
+
+        }
+
+
+        .portfolio-hero h1 span {
+
+            display: block;
+
+            color: var(--color-accent);
+
+        }
+
+
+        .portfolio-hero-description {
+
+            max-width: 650px;
+
+            margin: 30px 0 0;
+
+            color: rgba(245, 243, 238, 0.78);
+
+            font-size: 16px;
+
+            font-weight: 300;
+
+            line-height: 1.85;
+
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ====================================================== */
+
+        .portfolio-breadcrumb {
+
+            position: absolute;
+
+            top: 112px;
+
+            left: 0;
+
+            right: 0;
+
+            z-index: 10;
+
+        }
+
+
+        .portfolio-breadcrumb-inner {
+
+            display: flex;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+        }
+
+
+        .portfolio-breadcrumb a {
+
+            color: rgba(245, 243, 238, 0.65);
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.6px;
+
+            line-height: 1.5;
+
+            text-decoration: none;
+
+            text-transform: uppercase;
+
+            transition: color 0.3s ease;
+
+        }
+
+
+        .portfolio-breadcrumb a:hover {
+
+            color: var(--color-accent);
+
+        }
+
+
+        .portfolio-breadcrumb .separator {
+
+            color: var(--color-accent);
+
+            font-size: 11px;
+
+        }
+
+
+        .portfolio-breadcrumb strong {
+
+            color: var(--color-white);
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.6px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* =====================================================
+           INTRO SECTION
+        ====================================================== */
+
+        .portfolio-intro {
+
+            background: var(--color-white);
+
+            color: var(--color-black);
+
+            text-align: center;
+
+        }
+
+
+        .portfolio-intro-content {
+
+            width: 100%;
+
+            max-width: 780px;
+
+            margin: 0 auto;
+
+        }
+
+
+        .portfolio-intro-content .section-eyebrow {
+
+            margin-bottom: 14px;
+
+        }
+
+
+        .portfolio-intro-content .section-title {
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .portfolio-intro-content > p:last-child {
+
+            max-width: 690px;
+
+            margin: 0 auto;
+
+            color: #6e6b66;
+
+            font-size: 15px;
+
+            font-weight: 300;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =====================================================
+           CATEGORY NAVIGATION
+        ====================================================== */
+
+        .portfolio-filter-wrapper {
+
+            margin-top: 48px;
+
+        }
+
+
+        .portfolio-filter {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 9px;
+
+        }
+
+
+        .portfolio-filter a {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-height: 45px;
+
+            padding: 11px 19px;
+
+            border: 1px solid rgba(17, 17, 17, 0.14);
+
+            background: transparent;
+
+            color: #55524e;
+
+            font-family: var(--font-body);
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.35px;
+
+            line-height: 1;
+
+            text-transform: uppercase;
+
+            text-decoration: none;
+
+            white-space: nowrap;
+
+            transition:
+                background 0.3s ease,
+                border-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+
+        }
+
+
+        .portfolio-filter a i {
+
+            font-size: 13px;
+
+            margin-right: 7px;
+
+        }
+
+
+        .portfolio-filter a:hover {
+
+            border-color: var(--color-black);
+
+            background: var(--color-black);
+
+            color: var(--color-white);
+
+            transform: translateY(-2px);
+
+        }
+
+
+        .portfolio-filter a.active {
+
+            border-color: var(--color-black);
+
+            background: var(--color-black);
+
+            color: var(--color-white);
+
+        }
+
+
+        /* =====================================================
+           GALLERY SECTION
+        ====================================================== */
+
+        .portfolio-gallery-section {
+
+            background: var(--color-white);
+
+            padding-top: 20px;
+
+            padding-bottom: 115px;
+
+        }
+
+
+        .portfolio-gallery {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 20px;
+
+            align-items: start;
+
+        }
+
+
+        /* =====================================================
+           GALLERY ITEM
+        ====================================================== */
+
+        .portfolio-item {
+
+            position: relative;
+
+            width: 100%;
+
+            overflow: hidden;
+
+            background: #151515;
+
+        }
+
+
+        .portfolio-item a {
+
+            display: block;
+
+            color: inherit;
+
+            text-decoration: none;
+
+        }
+
+
+        .portfolio-item-image {
+
+            position: relative;
+
+            width: 100%;
+
+            overflow: hidden;
+
+            aspect-ratio: 4 / 5;
+
+            background: #151515;
+
+        }
+
+
+        .portfolio-item:nth-child(2) .portfolio-item-image,
+        .portfolio-item:nth-child(5) .portfolio-item-image {
+
+            aspect-ratio: 4 / 4.8;
+
+        }
+
+
+        .portfolio-item:nth-child(3) .portfolio-item-image,
+        .portfolio-item:nth-child(6) .portfolio-item-image {
+
+            aspect-ratio: 4 / 5.4;
+
+        }
+
+
+        .portfolio-item img {
+
+            display: block;
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                filter 0.5s ease;
+
+        }
+
+
+        .portfolio-item:hover img {
+
+            transform: scale(1.055);
+
+            filter: brightness(0.65);
+
+        }
+
+
+        /* =====================================================
+           IMAGE OVERLAY
+        ====================================================== */
+
+        .portfolio-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            justify-content: space-between;
+
+            padding: 25px;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.82) 0%,
+                    rgba(0, 0, 0, 0.30) 38%,
+                    transparent 70%
+                );
+
+            transition:
+                background 0.4s ease;
+
+        }
+
+
+        .portfolio-item:hover .portfolio-overlay {
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.88) 0%,
+                    rgba(0, 0, 0, 0.38) 42%,
+                    transparent 72%
+                );
+
+        }
+
+
+        .portfolio-overlay-content {
+
+            transform: translateY(8px);
+
+            transition:
+                transform 0.4s ease;
+
+        }
+
+
+        .portfolio-item:hover
+        .portfolio-overlay-content {
+
+            transform: translateY(0);
+
+        }
+
+
+        .portfolio-category {
+
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: var(--color-accent);
+
+            font-size: 9px;
+
+            font-weight: 600;
+
+            letter-spacing: 2px;
+
+            line-height: 1.4;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .portfolio-title {
+
+            display: block;
+
+            color: var(--color-white);
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(20px, 2vw, 27px);
+
+            font-weight: 500;
+
+            line-height: 1.2;
+
+        }
+
+
+        .portfolio-view-icon {
+
+            flex: 0 0 auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 44px;
+
+            height: 44px;
+
+            margin-left: 15px;
+
+            border: 1px solid rgba(255,255,255,0.55);
+
+            border-radius: 50%;
+
+            color: var(--color-white);
+
+            font-size: 16px;
+
+            transition:
+                border-color 0.3s ease,
+                background 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+
+        }
+
+
+        .portfolio-item:hover .portfolio-view-icon {
+
+            border-color: var(--color-accent);
+
+            background: var(--color-accent);
+
+            color: var(--color-black);
+
+            transform: rotate(45deg);
+
+        }
+
+
+        /* =====================================================
+           VIEW ALL COLLECTIONS
+        ====================================================== */
+
+        .category-view-wrapper {
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-top: 50px;
+
+        }
+
+
+        .category-view-link {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 11px;
+
+            min-height: 48px;
+
+            padding: 12px 23px;
+
+            border: 1px solid rgba(17,17,17,0.18);
+
+            color: var(--color-black);
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.5px;
+
+            line-height: 1;
+
+            text-transform: uppercase;
+
+            text-decoration: none;
+
+            transition:
+                background 0.3s ease,
+                border-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+
+        }
+
+
+        .category-view-link:hover {
+
+            border-color: var(--color-black);
+
+            background: var(--color-black);
+
+            color: var(--color-white);
+
+            transform: translateY(-2px);
+
+        }
+
+
+        .category-view-link i {
+
+            font-size: 13px;
+
+        }
+
+
+        /* =====================================================
+           COLLECTION DIRECTORY
+        ====================================================== */
+
+        .portfolio-directory {
+
+            background: #f5f3ee;
+
+            padding: 115px 0;
+
+        }
+
+
+        .portfolio-directory-heading {
+
+            max-width: 680px;
+
+            margin: 0 auto 55px;
+
+            text-align: center;
+
+        }
+
+
+        .portfolio-directory-heading .section-title {
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .portfolio-directory-heading p:last-child {
+
+            margin: 0;
+
+            color: #6e6b66;
+
+            font-size: 15px;
+
+            font-weight: 300;
+
+            line-height: 1.85;
+
+        }
+
+
+        .collection-card {
+
+            position: relative;
+
+            display: block;
+
+            height: 100%;
+
+            min-height: 320px;
+
+            overflow: hidden;
+
+            color: var(--color-white);
+
+            text-decoration: none;
+
+            background: #151515;
+
+        }
+
+
+        .collection-card-image {
+
+            position: absolute;
+
+            inset: 0;
+
+        }
+
+
+        .collection-card-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                filter 0.5s ease;
+
+        }
+
+
+        .collection-card::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0,0,0,0.88),
+                    rgba(0,0,0,0.08) 75%
+                );
+
+        }
+
+
+        .collection-card-content {
+
+            position: absolute;
+
+            left: 0;
+
+            right: 0;
+
+            bottom: 0;
+
+            z-index: 2;
+
+            padding: 27px;
+
+        }
+
+
+        .collection-number {
+
+            display: block;
+
+            margin-bottom: 9px;
+
+            color: var(--color-accent);
+
+            font-size: 9px;
+
+            font-weight: 600;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        .collection-card h3 {
+
+            margin: 0 0 7px;
+
+            color: var(--color-white);
+
+            font-family: var(--font-heading);
+
+            font-size: 29px;
+
+            font-weight: 500;
+
+        }
+
+
+        .collection-card p {
+
+            margin: 0;
+
+            color: rgba(255,255,255,0.68);
+
+            font-size: 12px;
+
+            line-height: 1.6;
+
+        }
+
+
+        .collection-arrow {
+
+            position: absolute;
+
+            right: 25px;
+
+            bottom: 25px;
+
+            z-index: 3;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 42px;
+
+            height: 42px;
+
+            border: 1px solid rgba(255,255,255,0.45);
+
+            border-radius: 50%;
+
+            color: var(--color-white);
+
+            transition:
+                background 0.3s ease,
+                border-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+
+        }
+
+
+        .collection-card:hover
+        .collection-card-image img {
+
+            transform: scale(1.06);
+
+            filter: brightness(0.7);
+
+        }
+
+
+        .collection-card:hover
+        .collection-arrow {
+
+            border-color: var(--color-accent);
+
+            background: var(--color-accent);
+
+            color: var(--color-black);
+
+            transform: rotate(45deg);
+
+        }
+
+
+        /* =====================================================
+           CTA
+        ====================================================== */
+
+        .portfolio-cta {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 125px 0;
+
+            background: var(--color-black);
+
+            text-align: center;
+
+        }
+
+
+        .portfolio-cta::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: -120px;
+
+            left: 50%;
+
+            width: 420px;
+
+            height: 420px;
+
+            border: 1px solid rgba(255,255,255,0.05);
+
+            border-radius: 50%;
+
+            transform: translateX(-50%);
+
+        }
+
+
+        .portfolio-cta .container {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        .portfolio-cta .section-eyebrow {
+
+            margin-bottom: 18px;
+
+            color: var(--color-accent);
+
+        }
+
+
+        .portfolio-cta h2 {
+
+            max-width: 800px;
+
+            margin: 0 auto 25px;
+
+            color: var(--color-white);
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(42px, 6vw, 72px);
+
+            font-weight: 500;
+
+            line-height: 1.08;
+
+            letter-spacing: -1.5px;
+
+        }
+
+
+        .portfolio-cta h2 span {
+
+            color: var(--color-accent);
+
+        }
+
+
+        .portfolio-cta p {
+
+            max-width: 570px;
+
+            margin: 0 auto 34px;
+
+            color: var(--color-text-muted);
+
+            font-size: 15px;
+
+            font-weight: 300;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           ACCESSIBILITY
+        ====================================================== */
+
+        .portfolio-filter a:focus-visible,
+        .portfolio-item a:focus-visible,
+        .collection-card:focus-visible,
+        .category-view-link:focus-visible {
+
+            outline: 2px solid var(--color-accent);
+
+            outline-offset: 4px;
+
+        }
+
+
+        /* =====================================================
+           LARGE TABLETS
+        ====================================================== */
+
+        @media (max-width: 1199.98px) {
+
+            .portfolio-hero {
+
+                min-height: 72vh;
+
+            }
+
+
+            .portfolio-hero-content {
+
+                padding-bottom: 90px;
+
+            }
+
+
+            .portfolio-gallery {
+
+                gap: 16px;
+
+            }
+
+
+            .portfolio-title {
+
+                font-size: 22px;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           TABLETS
+        ====================================================== */
+
+        @media (max-width: 991.98px) {
+
+            .portfolio-hero {
+
+                min-height: 68vh;
+
+            }
+
+
+            .portfolio-breadcrumb {
+
+                top: 100px;
+
+            }
+
+
+            .portfolio-hero-content {
+
+                padding-top: 175px;
+
+                padding-bottom: 75px;
+
+            }
+
+
+            .portfolio-hero h1 {
+
+                font-size: clamp(52px, 9vw, 78px);
+
+            }
+
+
+            .portfolio-gallery {
+
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+
+                gap: 14px;
+
+            }
+
+
+            .portfolio-directory {
+
+                padding: 90px 0;
+
+            }
+
+
+            .collection-card {
+
+                min-height: 300px;
+
+            }
+
+
+            .portfolio-cta {
+
+                padding: 100px 0;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE TABLETS
+        ====================================================== */
+
+        @media (max-width: 767.98px) {
+
+            .portfolio-hero {
+
+                min-height: 74vh;
+
+                background-position: center center;
+
+            }
+
+
+            .portfolio-breadcrumb {
+
+                top: 92px;
+
+            }
+
+
+            .portfolio-hero-content {
+
+                padding-top: 165px;
+
+                padding-bottom: 62px;
+
+            }
+
+
+            .portfolio-eyebrow {
+
+                margin-bottom: 16px;
+
+                font-size: 10px;
+
+                letter-spacing: 2.4px;
+
+            }
+
+
+            .portfolio-eyebrow::before {
+
+                width: 25px;
+
+            }
+
+
+            .portfolio-hero h1 {
+
+                font-size: clamp(43px, 11vw, 62px);
+
+                letter-spacing: -1.5px;
+
+            }
+
+
+            .portfolio-hero-description {
+
+                max-width: 100%;
+
+                margin-top: 22px;
+
+                font-size: 14px;
+
+                line-height: 1.75;
+
+            }
+
+
+            .portfolio-intro-content {
+
+                max-width: 100%;
+
+            }
+
+
+            .portfolio-filter-wrapper {
+
+                margin-top: 35px;
+
+            }
+
+
+            .portfolio-filter {
+
+                justify-content: flex-start;
+
+                flex-wrap: nowrap;
+
+                overflow-x: auto;
+
+                padding: 3px 2px 10px;
+
+                scrollbar-width: none;
+
+            }
+
+
+            .portfolio-filter::-webkit-scrollbar {
+
+                display: none;
+
+            }
+
+
+            .portfolio-filter a {
+
+                flex: 0 0 auto;
+
+                min-height: 43px;
+
+                padding: 10px 16px;
+
+            }
+
+
+            .portfolio-gallery-section {
+
+                padding-top: 15px;
+
+                padding-bottom: 85px;
+
+            }
+
+
+            .portfolio-gallery {
+
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+
+                gap: 10px;
+
+            }
+
+
+            .portfolio-item-image,
+            .portfolio-item:nth-child(2) .portfolio-item-image,
+            .portfolio-item:nth-child(5) .portfolio-item-image {
+
+                aspect-ratio: 4 / 5;
+
+            }
+
+
+            .portfolio-item:nth-child(3) .portfolio-item-image,
+            .portfolio-item:nth-child(6) .portfolio-item-image {
+
+                aspect-ratio: 4 / 5.4;
+
+            }
+
+
+            .portfolio-overlay {
+
+                padding: 15px;
+
+            }
+
+
+            .portfolio-category {
+
+                margin-bottom: 4px;
+
+                font-size: 8px;
+
+                letter-spacing: 1.5px;
+
+            }
+
+
+            .portfolio-title {
+
+                font-size: 17px;
+
+            }
+
+
+            .portfolio-view-icon {
+
+                width: 34px;
+
+                height: 34px;
+
+                margin-left: 8px;
+
+                font-size: 13px;
+
+            }
+
+
+            .category-view-wrapper {
+
+                margin-top: 35px;
+
+            }
+
+
+            .portfolio-directory {
+
+                padding: 80px 0;
+
+            }
+
+
+            .portfolio-directory-heading {
+
+                margin-bottom: 38px;
+
+            }
+
+
+            .collection-card {
+
+                min-height: 280px;
+
+            }
+
+
+            .collection-card-content {
+
+                padding: 22px;
+
+            }
+
+
+            .collection-card h3 {
+
+                font-size: 25px;
+
+            }
+
+
+            .collection-arrow {
+
+                right: 18px;
+
+                bottom: 18px;
+
+                width: 38px;
+
+                height: 38px;
+
+            }
+
+
+            .portfolio-cta {
+
+                padding: 85px 0;
+
+            }
+
+
+            .portfolio-cta h2 {
+
+                font-size: clamp(38px, 10vw, 55px);
+
+            }
+
+
+            .portfolio-cta p {
+
+                font-size: 14px;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           SMALL MOBILE
+        ====================================================== */
+
+        @media (max-width: 575.98px) {
+
+            .portfolio-hero {
+
+                min-height: 78vh;
+
+            }
+
+
+            .portfolio-breadcrumb {
+
+                top: 88px;
+
+            }
+
+
+            .portfolio-hero-content {
+
+                padding-top: 150px;
+
+                padding-bottom: 50px;
+
+            }
+
+
+            .portfolio-hero h1 {
+
+                font-size: 43px;
+
+                line-height: 1.02;
+
+            }
+
+
+            .portfolio-hero-description {
+
+                font-size: 13.5px;
+
+            }
+
+
+            .portfolio-gallery {
+
+                grid-template-columns: 1fr;
+
+                gap: 12px;
+
+            }
+
+
+            .portfolio-item-image,
+            .portfolio-item:nth-child(2) .portfolio-item-image,
+            .portfolio-item:nth-child(3) .portfolio-item-image,
+            .portfolio-item:nth-child(5) .portfolio-item-image,
+            .portfolio-item:nth-child(6) .portfolio-item-image {
+
+                aspect-ratio: 4 / 5;
+
+            }
+
+
+            .portfolio-overlay {
+
+                padding: 19px;
+
+            }
+
+
+            .portfolio-title {
+
+                font-size: 21px;
+
+            }
+
+
+            .portfolio-view-icon {
+
+                width: 38px;
+
+                height: 38px;
+
+            }
+
+
+            .portfolio-directory {
+
+                padding: 70px 0;
+
+            }
+
+
+            .collection-card {
+
+                min-height: 300px;
+
+            }
+
+
+            .portfolio-cta {
+
+                padding: 75px 0;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           VERY SMALL DEVICES
+        ====================================================== */
+
+        @media (max-width: 380px) {
+
+            .portfolio-hero h1 {
+
+                font-size: 38px;
+
+            }
+
+
+            .portfolio-title {
+
+                font-size: 19px;
+
+            }
+
+
+            .portfolio-filter a {
+
+                padding: 9px 13px;
+
+                font-size: 9px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="portfolio-page">
+
+
+    <!-- =====================================================
+         HEADER / NAVIGATION
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+            <div class="container">
+
+
+                <!-- BRAND -->
+
+                <a class="navbar-brand"
+                   href="../index.html"
+                   aria-label="Malcolm Lismore Photography Home">
+
+                    <span class="brand-name">
+                        MALCOLM LISMORE
+                    </span>
+
+                    <span class="brand-subtitle">
+                        PHOTOGRAPHY
+                    </span>
+
+                </a>
+
+
+                <!-- MOBILE MENU BUTTON -->
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavigation"
+                    aria-controls="mainNavigation"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <!-- NAVIGATION -->
+
+                <div class="collapse navbar-collapse"
+                     id="mainNavigation">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="../index.html">
+
+                                Home
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="about.html">
+
+                                About
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link active"
+                               href="portfolio.html"
+                               aria-current="page">
+
+                                Portfolio
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="services.html">
+
+                                Services
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                               href="pricing.html">
+
+                                Pricing
+
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item ms-lg-3">
+
+                            <a class="nav-link enquiry-nav-link"
+                               href="enquiry.html">
+
+                                Make an Enquiry
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main>
+
+        <section class="portfolio-hero">
+
+
+            <!-- BREADCRUMB -->
+
+            <div class="portfolio-breadcrumb">
+
+                <div class="container">
+
+                    <div class="portfolio-breadcrumb-inner">
+
+                        <a href="../index.html">
+                            Home
+                        </a>
+
+                        <span class="separator">
+                            /
+                        </span>
+
+                        <strong>
+                            Portfolio
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO CONTENT -->
+
+            <div class="container">
+
+                <div class="portfolio-hero-content">
+
+                    <p class="portfolio-eyebrow">
+                        SELECTED WORK
+                    </p>
+
+
+                    <h1>
+
+                        Stories told
+                        <span>through light.</span>
+
+                    </h1>
+
+
+                    <p class="portfolio-hero-description">
+
+                        A curated collection of landscapes,
+                        wildlife, coastal birds, weddings,
+                        portraits and special moments
+                        photographed across Scotland.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             INTRODUCTION
+        ================================================== -->
+
+        <section class="portfolio-intro section-padding">
+
+            <div class="container">
+
+                <div class="portfolio-intro-content">
+
+                    <p class="section-eyebrow">
+                        THE COLLECTION
+                    </p>
+
+
+                    <h2 class="section-title">
+
+                        Explore the
+                        <span>portfolio.</span>
+
+                    </h2>
+
+
+                    <p>
+
+                        From rugged Highland landscapes and
+                        quiet wildlife encounters to intimate
+                        celebrations and unforgettable moments,
+                        every photograph is created to preserve
+                        atmosphere, emotion and place.
+
+                    </p>
+
+                </div>
+
+
+                <!-- CATEGORY NAVIGATION -->
+
+                <div class="portfolio-filter-wrapper">
+
+                    <nav class="portfolio-filter"
+                         aria-label="Portfolio categories">
+
+
+                        <a href="portfolio.html"
+                           class="active"
+                           aria-current="page">
+
+                            <i class="bi bi-grid-3x3-gap"></i>
+
+                            All Work
+
+                        </a>
+
+
+                        <a href="landscapes.html">
+
+                            <i class="bi bi-image"></i>
+
+                            Landscapes
+
+                        </a>
+
+
+                        <a href="wildlife.html">
+
+                            <i class="bi bi-tree"></i>
+
+                            Wildlife
+
+                        </a>
+
+
+                        <a href="birds.html">
+
+                            <i class="bi bi-feather"></i>
+
+                            Coastal Birds
+
+                        </a>
+
+
+                        <a href="weddings.html">
+
+                            <i class="bi bi-heart"></i>
+
+                            Weddings
+
+                        </a>
+
+
+                        <a href="portraits.html">
+
+                            <i class="bi bi-person"></i>
+
+                            Portraits
+
+                        </a>
+
+
+                        <a href="events.html">
+
+                            <i class="bi bi-calendar-event"></i>
+
+                            Events
+
+                        </a>
+
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FEATURED COLLECTIONS
+        ================================================== -->
+
+        <section class="portfolio-gallery-section">
+
+            <div class="container">
+
+
+                <div class="portfolio-gallery">
+
+
+                    <!-- LANDSCAPES -->
+
+                    <article class="portfolio-item">
+
+                        <a href="landscapes.html"
+                           aria-label="Explore Scottish Landscapes">
+
+                            <div class="portfolio-item-image">
+
+                                <img
+                                    src="../assets/images/landscapes/nature photo 8.jpg"
+                                    alt="Scottish landscape photography"
+                                    loading="lazy">
+
+                                <div class="portfolio-overlay">
+
+                                    <div class="portfolio-overlay-content">
+
+                                        <span class="portfolio-category">
+                                            Landscapes
+                                        </span>
+
+                                        <span class="portfolio-title">
+                                            Scottish Landscapes
+                                        </span>
+
+                                    </div>
+
+                                    <span class="portfolio-view-icon"
+                                          aria-hidden="true">
+
+                                        <i class="bi bi-arrow-up-right"></i>
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- WILDLIFE -->
+
+                    <article class="portfolio-item">
+
+                        <a href="wildlife.html"
+                           aria-label="Explore Scottish Wildlife">
+
+                            <div class="portfolio-item-image">
+
+                                <img
+                                    src="../assets/images/wildlife/wild image 6.png"
+                                    alt="Scottish wildlife photography"
+                                    loading="lazy">
+
+                                <div class="portfolio-overlay">
+
+                                    <div class="portfolio-overlay-content">
+
+                                        <span class="portfolio-category">
+                                            Wildlife
+                                        </span>
+
+                                        <span class="portfolio-title">
+                                            Scottish Wildlife
+                                        </span>
+
+                                    </div>
+
+                                    <span class="portfolio-view-icon"
+                                          aria-hidden="true">
+
+                                        <i class="bi bi-arrow-up-right"></i>
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- BIRDS -->
+
+                    <article class="portfolio-item">
+
+                        <a href="birds.html"
+                           aria-label="Explore Coastal Bird Photography">
+
+                            <div class="portfolio-item-image">
+
+                                <img
+                                    src="../assets/images/birds/bird 8.jpg"
+                                    alt="Scottish coastal bird photography"
+                                    loading="lazy">
+
+                                <div class="portfolio-overlay">
+
+                                    <div class="portfolio-overlay-content">
+
+                                        <span class="portfolio-category">
+                                            Coastal Birds
+                                        </span>
+
+                                        <span class="portfolio-title">
+                                            Life Along the Coast
+                                        </span>
+
+                                    </div>
+
+                                    <span class="portfolio-view-icon"
+                                          aria-hidden="true">
+
+                                        <i class="bi bi-arrow-up-right"></i>
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- WEDDINGS -->
+
+                    <article class="portfolio-item">
+
+                        <a href="weddings.html"
+                           aria-label="Explore Wedding Photography">
+
+                            <div class="portfolio-item-image">
+
+                                <img
+                                    src="../assets/images/weddings/wedding photo 1.jpg"
+                                    alt="Scottish wedding photography"
+                                    loading="lazy">
+
+                                <div class="portfolio-overlay">
+
+                                    <div class="portfolio-overlay-content">
+
+                                        <span class="portfolio-category">
+                                            Weddings
+                                        </span>
+
+                                        <span class="portfolio-title">
+                                            Moments of Love
+                                        </span>
+
+                                    </div>
+
+                                    <span class="portfolio-view-icon"
+                                          aria-hidden="true">
+
+                                        <i class="bi bi-arrow-up-right"></i>
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- PORTRAITS -->
+
+                    <article class="portfolio-item">
+
+                        <a href="portraits.html"
+                           aria-label="Explore Portrait Photography">
+
+                            <div class="portfolio-item-image">
+
+                                <img
+                                    src="../assets/images/portraits/portrait photo 1.jpg"
+                                    alt="Portrait photography"
+                                    loading="lazy">
+
+                                <div class="portfolio-overlay">
+
+                                    <div class="portfolio-overlay-content">
+
+                                        <span class="portfolio-category">
+                                            Portraits
+                                        </span>
+
+                                        <span class="portfolio-title">
+                                            Portrait Stories
+                                        </span>
+
+                                    </div>
+
+                                    <span class="portfolio-view-icon"
+                                          aria-hidden="true">
+
+                                        <i class="bi bi-arrow-up-right"></i>
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- EVENTS -->
+
+                    <article class="portfolio-item">
+
+                        <a href="events.html"
+                           aria-label="Explore Event Photography">
+
+                            <div class="portfolio-item-image">
+
+                                <img
+                                    src="../assets/images/events/event 1.png"
+                                    alt="Special event photography"
+                                    loading="lazy">
+
+                                <div class="portfolio-overlay">
+
+                                    <div class="portfolio-overlay-content">
+
+                                        <span class="portfolio-category">
+                                            Events
+                                        </span>
+
+                                        <span class="portfolio-title">
+                                            Special Occasions
+                                        </span>
+
+                                    </div>
+
+                                    <span class="portfolio-view-icon"
+                                          aria-hidden="true">
+
+                                        <i class="bi bi-arrow-up-right"></i>
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- VIEW ALL COLLECTIONS -->
+
+                <div class="category-view-wrapper">
+
+                    <a href="#portfolioCategories"
+                       class="category-view-link">
+
+                        Explore All Collections
+
+                        <i class="bi bi-arrow-down"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             COLLECTION DIRECTORY
+        ================================================== -->
+
+        <section class="portfolio-directory"
+                 id="portfolioCategories">
+
+            <div class="container">
+
+
+                <div class="portfolio-directory-heading">
+
+                    <p class="section-eyebrow">
+                        PHOTOGRAPHY COLLECTIONS
+                    </p>
+
+
+                    <h2 class="section-title">
+
+                        Choose a
+                        <span>collection.</span>
+
+                    </h2>
+
+
+                    <p>
+
+                        Browse each photography collection
+                        individually to explore the complete
+                        gallery and discover more of the work.
+
+                    </p>
+
+                </div>
+
+
+                <div class="row g-3 g-lg-4">
+
+
+                    <!-- LANDSCAPES -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <a href="landscapes.html"
+                           class="collection-card">
+
+                            <div class="collection-card-image">
+
+                                <img
+                                    src="../assets/images/landscapes/nature photo 1.jpg"
+                                    alt="Scottish landscape collection"
+                                    loading="lazy">
+
+                            </div>
+
+
+                            <div class="collection-card-content">
+
+                                <span class="collection-number">
+                                    01 / 06
+                                </span>
+
+                                <h3>
+                                    Landscapes
+                                </h3>
+
+                                <p>
+                                    Wild places, wide horizons
+                                    and Scottish light.
+                                </p>
+
+                            </div>
+
+
+                            <span class="collection-arrow"
+                                  aria-hidden="true">
+
+                                <i class="bi bi-arrow-up-right"></i>
+
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- WILDLIFE -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <a href="wildlife.html"
+                           class="collection-card">
+
+                            <div class="collection-card-image">
+
+                                <img
+                                    src="../assets/images/wildlife/wild image 5.jpg"
+                                    alt="Scottish wildlife collection"
+                                    loading="lazy">
+
+                            </div>
+
+
+                            <div class="collection-card-content">
+
+                                <span class="collection-number">
+                                    02 / 06
+                                </span>
+
+                                <h3>
+                                    Wildlife
+                                </h3>
+
+                                <p>
+                                    Quiet encounters from
+                                    Scotland's wild places.
+                                </p>
+
+                            </div>
+
+
+                            <span class="collection-arrow"
+                                  aria-hidden="true">
+
+                                <i class="bi bi-arrow-up-right"></i>
+
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- BIRDS -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <a href="birds.html"
+                           class="collection-card">
+
+                            <div class="collection-card-image">
+
+                                <img
+                                    src="../assets/images/birds/wild image 1.jpg"
+                                    alt="Coastal bird photography collection"
+                                    loading="lazy">
+
+                            </div>
+
+
+                            <div class="collection-card-content">
+
+                                <span class="collection-number">
+                                    03 / 06
+                                </span>
+
+                                <h3>
+                                    Coastal Birds
+                                </h3>
+
+                                <p>
+                                    Birdlife, movement and
+                                    dramatic coastal scenery.
+                                </p>
+
+                            </div>
+
+
+                            <span class="collection-arrow"
+                                  aria-hidden="true">
+
+                                <i class="bi bi-arrow-up-right"></i>
+
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- WEDDINGS -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <a href="weddings.html"
+                           class="collection-card">
+
+                            <div class="collection-card-image">
+
+                                <img
+                                    src="../assets/images/weddings/wedding photo 7.jpg"
+                                    alt="Wedding photography collection"
+                                    loading="lazy">
+
+                            </div>
+
+
+                            <div class="collection-card-content">
+
+                                <span class="collection-number">
+                                    04 / 06
+                                </span>
+
+                                <h3>
+                                    Weddings
+                                </h3>
+
+                                <p>
+                                    Honest moments, emotion
+                                    and unforgettable celebrations.
+                                </p>
+
+                            </div>
+
+
+                            <span class="collection-arrow"
+                                  aria-hidden="true">
+
+                                <i class="bi bi-arrow-up-right"></i>
+
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- PORTRAITS -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <a href="portraits.html"
+                           class="collection-card">
+
+                            <div class="collection-card-image">
+
+                                <img
+                                    src="../assets/images/portraits/portrait photo 1.jpg"
+                                    alt="Portrait photography collection"
+                                    loading="lazy">
+
+                            </div>
+
+
+                            <div class="collection-card-content">
+
+                                <span class="collection-number">
+                                    05 / 06
+                                </span>
+
+                                <h3>
+                                    Portraits
+                                </h3>
+
+                                <p>
+                                    Personality, expression
+                                    and natural character.
+                                </p>
+
+                            </div>
+
+
+                            <span class="collection-arrow"
+                                  aria-hidden="true">
+
+                                <i class="bi bi-arrow-up-right"></i>
+
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- EVENTS -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <a href="events.html"
+                           class="collection-card">
+
+                            <div class="collection-card-image">
+
+                                <img
+                                    src="../assets/images/events/event 8.jpg"
+                                    alt="Event photography collection"
+                                    loading="lazy">
+
+                            </div>
+
+
+                            <div class="collection-card-content">
+
+                                <span class="collection-number">
+                                    06 / 06
+                                </span>
+
+                                <h3>
+                                    Events
+                                </h3>
+
+                                <p>
+                                    Celebrations, gatherings
+                                    and special occasions.
+                                </p>
+
+                            </div>
+
+
+                            <span class="collection-arrow"
+                                  aria-hidden="true">
+
+                                <i class="bi bi-arrow-up-right"></i>
+
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="portfolio-cta">
+
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    YOUR STORY
+                </p>
+
+
+                <h2>
+
+                    Have a moment worth
+                    <span>remembering?</span>
+
+                </h2>
+
+
+                <p>
+
+                    From intimate portraits to full wedding
+                    celebrations, let's create photographs
+                    that you'll want to keep for years to come.
+
+                </p>
+
+
+                <a href="enquiry.html"
+                   class="btn btn-light-custom">
+
+                    Make an Enquiry
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="row gy-5">
+
+
+                <!-- BRAND -->
+
+                <div class="col-lg-5">
+
+                    <a href="../index.html"
+                       class="footer-brand">
+
+                        <span>
+                            MALCOLM LISMORE
+                        </span>
+
+                        <small>
+                            PHOTOGRAPHY
+                        </small>
+
+                    </a>
+
+
+                    <p class="footer-description">
+
+                        Scottish landscape, wildlife,
+                        wedding, portrait and event
+                        photography.
+
+                    </p>
+
+                </div>
+
+
+                <!-- EXPLORE -->
+
+                <div class="col-6 col-lg-2">
+
+                    <h4>
+                        Explore
+                    </h4>
+
+
+                    <ul>
+
+                        <li>
+                            <a href="../index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="portfolio.html">
+                                Portfolio
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">
+                                Services
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- INFORMATION -->
+
+                <div class="col-6 col-lg-2">
+
+                    <h4>
+                        Information
+                    </h4>
+
+
+                    <ul>
+
+                        <li>
+                            <a href="pricing.html">
+                                Pricing
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="enquiry.html">
+                                Enquire
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- SOCIAL -->
+
+                <div class="col-lg-3">
+
+                    <h4>
+                        Follow
+                    </h4>
+
+
+                    <div class="social-links">
+
+                        <a href="#"
+                           aria-label="Instagram">
+
+                            <i class="bi bi-instagram"></i>
+
+                        </a>
+
+
+                        <a href="#"
+                           aria-label="Facebook">
+
+                            <i class="bi bi-facebook"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    ©
+                    <span id="currentYear"></span>
+                    Malcolm Lismore Photography.
+                    All rights reserved.
+
+                </p>
+
+
+                <p>
+                    Designed & developed with care.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         BOOTSTRAP JS
+    ====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- =====================================================
+         WEBSITE JS
+    ====================================================== -->
+
+    <script src="../assets/js/main.js">
+    </script>
+
+
+    <!-- =====================================================
+         CURRENT YEAR
+    ====================================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const yearElement =
+                document.getElementById("currentYear");
+
+            if (yearElement) {
+
+                yearElement.textContent =
+                    new Date().getFullYear();
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
+

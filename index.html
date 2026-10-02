@@ -1,0 +1,1952 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Malcolm Lismore Photography — Scottish landscape, wildlife, wedding, portrait and event photography.">
+
+    <meta name="keywords"
+          content="Scottish photography, landscape photography, wildlife photography, wedding photography, portrait photography, Malcolm Lismore">
+
+    <meta name="author"
+          content="Malcolm Lismore Photography">
+
+    <title>
+        Malcolm Lismore Photography | Scotland
+    </title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         WEBSITE CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="assets/css/responsive.css">
+
+
+    <!-- =====================================================
+         HOME PAGE IMAGE / LAYOUT CSS
+    ====================================================== -->
+
+    <style>
+
+        /* =====================================================
+           HERO SECTION
+        ====================================================== */
+
+        .hero-section {
+
+            position: relative;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            background-image:
+
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.74) 0%,
+                    rgba(0, 0, 0, 0.48) 45%,
+                    rgba(0, 0, 0, 0.16) 100%
+                ),
+
+                url("assets/images/landscapes/nature photo 3.jpg");
+
+            background-position: center;
+
+            background-size: cover;
+
+            background-repeat: no-repeat;
+        }
+
+
+        .hero-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+
+                linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0.20),
+                    transparent 38%,
+                    rgba(0, 0, 0, 0.58)
+                );
+
+            pointer-events: none;
+        }
+
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            padding-top: 130px;
+
+            padding-bottom: 110px;
+        }
+
+
+        .hero-title {
+
+            max-width: 900px;
+        }
+
+
+        .hero-description {
+
+            max-width: 620px;
+        }
+
+
+        /* =====================================================
+           FEATURED PHOTOGRAPHY
+        ====================================================== */
+
+        .gallery-preview {
+
+            align-items: stretch;
+        }
+
+
+        .featured-card {
+
+            position: relative;
+
+            display: block;
+
+            width: 100%;
+
+            height: 520px;
+
+            overflow: hidden;
+
+            background: #111;
+
+            text-decoration: none;
+
+            isolation: isolate;
+        }
+
+
+        .featured-card-large {
+
+            height: 620px;
+        }
+
+
+        .featured-card-image {
+
+            position: absolute;
+
+            inset: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            overflow: hidden;
+        }
+
+
+        .featured-card-image img {
+
+            display: block;
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            object-position: center;
+
+            transition:
+
+                transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+
+                filter 0.6s ease;
+        }
+
+
+        .featured-card-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            z-index: 2;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            justify-content: space-between;
+
+            padding: 35px;
+
+            background:
+
+                linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.84) 0%,
+                    rgba(0, 0, 0, 0.36) 45%,
+                    rgba(0, 0, 0, 0.02) 76%
+                );
+
+            color: #fff;
+        }
+
+
+        .featured-card-content {
+
+            transform: translateY(10px);
+
+            transition:
+                transform 0.45s ease;
+        }
+
+
+        .featured-number {
+
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: var(--color-accent);
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            letter-spacing: 2px;
+        }
+
+
+        .featured-card h3 {
+
+            margin: 0 0 6px;
+
+            color: #fff;
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(28px, 3vw, 42px);
+
+            font-weight: 500;
+
+            line-height: 1.1;
+        }
+
+
+        .featured-card p {
+
+            margin: 0;
+
+            color: rgba(255, 255, 255, 0.76);
+
+            font-size: 14px;
+
+            font-weight: 300;
+
+            line-height: 1.6;
+        }
+
+
+        .featured-arrow {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 52px;
+
+            height: 52px;
+
+            flex: 0 0 52px;
+
+            border: 1px solid rgba(255, 255, 255, 0.55);
+
+            border-radius: 50%;
+
+            color: #fff;
+
+            font-size: 18px;
+
+            transition:
+
+                background 0.35s ease,
+
+                border-color 0.35s ease,
+
+                color 0.35s ease,
+
+                transform 0.35s ease;
+        }
+
+
+        .featured-card:hover .featured-card-image img {
+
+            transform: scale(1.06);
+
+            filter: brightness(0.70);
+        }
+
+
+        .featured-card:hover .featured-card-content {
+
+            transform: translateY(0);
+        }
+
+
+        .featured-card:hover .featured-arrow {
+
+            border-color: var(--color-accent);
+
+            background: var(--color-accent);
+
+            color: #111;
+
+            transform: rotate(45deg);
+        }
+
+
+        /* =====================================================
+           ABOUT IMAGE
+        ====================================================== */
+
+        .about-image {
+
+            position: relative;
+
+            width: 100%;
+
+            height: 620px;
+
+            overflow: hidden;
+
+            background: #111;
+        }
+
+
+        .about-image img {
+
+            display: block;
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            object-position: center;
+
+            transition:
+                transform 0.8s ease;
+        }
+
+
+        .about-image:hover img {
+
+            transform: scale(1.035);
+        }
+
+
+        .about-image::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+
+                linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.64),
+                    transparent 48%
+                );
+
+            pointer-events: none;
+        }
+
+
+        .about-image-caption {
+
+            position: absolute;
+
+            left: 30px;
+
+            bottom: 25px;
+
+            z-index: 2;
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+
+        .about-image-caption span {
+
+            color: #fff;
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            letter-spacing: 2px;
+        }
+
+
+        .about-image-caption small {
+
+            margin-top: 5px;
+
+            color: rgba(255, 255, 255, 0.72);
+
+            font-size: 9px;
+
+            letter-spacing: 1.5px;
+        }
+
+
+        /* =====================================================
+           CTA SECTION
+        ====================================================== */
+
+        .cta-section {
+
+            position: relative;
+
+            min-height: 560px;
+
+            display: flex;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            background-image:
+
+                url("assets/images/weddings/wedding photo 1.jpg");
+
+            background-position: center;
+
+            background-size: cover;
+
+            background-repeat: no-repeat;
+        }
+
+
+        .cta-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.80),
+                    rgba(0, 0, 0, 0.42)
+                );
+        }
+
+
+        .cta-section .container {
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 991.98px) {
+
+            .featured-card,
+            .featured-card-large {
+
+                height: 500px;
+            }
+
+            .about-image {
+
+                height: 560px;
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+
+            .hero-section {
+
+                min-height: 90vh;
+
+                background-position: 60% center;
+            }
+
+
+            .hero-content {
+
+                padding-top: 120px;
+
+                padding-bottom: 90px;
+            }
+
+
+            .featured-card,
+            .featured-card-large {
+
+                height: 440px;
+            }
+
+
+            .featured-card-overlay {
+
+                padding: 25px;
+            }
+
+
+            .featured-card h3 {
+
+                font-size: 30px;
+            }
+
+
+            .featured-arrow {
+
+                width: 45px;
+
+                height: 45px;
+
+                flex-basis: 45px;
+            }
+
+
+            .about-image {
+
+                height: 480px;
+            }
+
+
+            .cta-section {
+
+                min-height: 500px;
+            }
+
+        }
+
+
+        @media (max-width: 575.98px) {
+
+            .hero-section {
+
+                min-height: 85vh;
+            }
+
+
+            .hero-content {
+
+                padding-top: 110px;
+
+                padding-bottom: 80px;
+            }
+
+
+            .featured-card,
+            .featured-card-large {
+
+                height: 380px;
+            }
+
+
+            .featured-card-overlay {
+
+                padding: 20px;
+            }
+
+
+            .featured-card h3 {
+
+                font-size: 27px;
+            }
+
+
+            .featured-card p {
+
+                font-size: 13px;
+            }
+
+
+            .featured-arrow {
+
+                width: 40px;
+
+                height: 40px;
+
+                flex-basis: 40px;
+
+                font-size: 15px;
+            }
+
+
+            .about-image {
+
+                height: 430px;
+            }
+
+
+            .about-image-caption {
+
+                left: 20px;
+
+                bottom: 20px;
+            }
+
+
+            .cta-section {
+
+                min-height: 460px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="site-header">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+
+            <!-- BRAND -->
+
+            <a class="navbar-brand"
+               href="index.html">
+
+                <span class="brand-name">
+                    MALCOLM LISMORE
+                </span>
+
+                <span class="brand-subtitle">
+                    PHOTOGRAPHY
+                </span>
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- NAVIGATION -->
+
+            <div class="collapse navbar-collapse"
+                 id="mainNavigation">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active"
+                           href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="pages/about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="pages/portfolio.html">
+
+                            Portfolio
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="pages/services.html">
+
+                            Services
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="pages/pricing.html">
+
+                            Pricing
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item ms-lg-3">
+
+                        <a class="nav-link enquiry-nav-link"
+                           href="pages/enquiry.html">
+
+                            Make an Enquiry
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero-section">
+
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="container hero-content">
+
+        <div class="row">
+
+            <div class="col-lg-8">
+
+
+                <p class="hero-eyebrow">
+
+                    SCOTTISH PHOTOGRAPHER
+
+                </p>
+
+
+                <h1 class="hero-title">
+
+                    Capturing Scotland,<br>
+
+                    Stories & Moments.
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Landscape, wildlife, weddings, portraits
+                    and special occasions captured across
+                    the rugged beauty of Scotland.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+
+                    <a href="pages/portfolio.html"
+                       class="btn btn-primary-custom">
+
+                        Explore Portfolio
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="pages/enquiry.html"
+                       class="btn btn-outline-light-custom">
+
+                        Make an Enquiry
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-scroll">
+
+        <span>
+            SCROLL TO EXPLORE
+        </span>
+
+        <i class="bi bi-arrow-down"></i>
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     INTRODUCTION
+========================================================= -->
+
+<section class="intro-section section-padding">
+
+
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+
+            <div class="col-lg-8">
+
+
+                <p class="section-eyebrow">
+
+                    WELCOME
+
+                </p>
+
+
+                <h2 class="section-title">
+
+                    Photography inspired by
+
+                    <span>
+                        Scotland's wild beauty.
+                    </span>
+
+                </h2>
+
+
+                <p class="section-description">
+
+                    Based on the North West coast of Scotland,
+                    Malcolm Lismore is passionate about capturing
+                    the landscapes, wildlife and people that make
+                    Scotland unique.
+
+                </p>
+
+
+                <a href="pages/about.html"
+                   class="text-link">
+
+                    Discover Malcolm's story
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     FEATURED WORK
+========================================================= -->
+
+<section class="featured-section section-padding">
+
+
+    <div class="container">
+
+
+        <!-- SECTION HEADER -->
+
+        <div class="section-heading-row">
+
+
+            <div>
+
+                <p class="section-eyebrow">
+
+                    SELECTED WORK
+
+                </p>
+
+
+                <h2 class="section-title">
+
+                    From the wild
+
+                    <span>
+                        to life's moments.
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+            <a href="pages/portfolio.html"
+               class="text-link d-none d-md-inline-flex">
+
+                View All Work
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+
+        </div>
+
+
+        <!-- FEATURED GALLERY -->
+
+        <div class="row g-4 gallery-preview">
+
+
+            <!-- =================================================
+                 LANDSCAPES
+            ================================================== -->
+
+            <div class="col-lg-7">
+
+                <a href="pages/landscapes.html"
+                   class="featured-card featured-card-large">
+
+
+                    <div class="featured-card-image">
+
+                        <img
+                            src="assets/images/landscapes/nature photo 8.png"
+                            alt="Scottish landscape photography"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <div class="featured-card-overlay">
+
+
+                        <div class="featured-card-content">
+
+                            <span class="featured-number">
+                                01
+                            </span>
+
+
+                            <h3>
+                                Landscapes
+                            </h3>
+
+
+                            <p>
+                                Explore the Scottish Highlands
+                            </p>
+
+                        </div>
+
+
+                        <span class="featured-arrow">
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </span>
+
+
+                    </div>
+
+
+                </a>
+
+            </div>
+
+
+            <!-- =================================================
+                 WILDLIFE
+            ================================================== -->
+
+            <div class="col-lg-5">
+
+                <a href="pages/wildlife.html"
+                   class="featured-card">
+
+
+                    <div class="featured-card-image">
+
+                        <img
+                            src="assets/images/wildlife/wild image 11.jpg"
+                            alt="Scottish wildlife photography"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <div class="featured-card-overlay">
+
+
+                        <div class="featured-card-content">
+
+                            <span class="featured-number">
+                                02
+                            </span>
+
+
+                            <h3>
+                                Wildlife
+                            </h3>
+
+
+                            <p>
+                                Scotland's natural world
+                            </p>
+
+                        </div>
+
+
+                        <span class="featured-arrow">
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </span>
+
+
+                    </div>
+
+
+                </a>
+
+            </div>
+
+
+            <!-- =================================================
+                 WEDDINGS
+            ================================================== -->
+
+            <div class="col-lg-5">
+
+                <a href="pages/weddings.html"
+                   class="featured-card">
+
+
+                    <div class="featured-card-image">
+
+                        <img
+                            src="assets/images/weddings/wedding photo 1.jpg"
+                            alt="Scottish wedding photography"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <div class="featured-card-overlay">
+
+
+                        <div class="featured-card-content">
+
+                            <span class="featured-number">
+                                03
+                            </span>
+
+
+                            <h3>
+                                Weddings
+                            </h3>
+
+
+                            <p>
+                                Moments worth remembering
+                            </p>
+
+                        </div>
+
+
+                        <span class="featured-arrow">
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </span>
+
+
+                    </div>
+
+
+                </a>
+
+            </div>
+
+
+            <!-- =================================================
+                 PORTRAITS
+            ================================================== -->
+
+            <div class="col-lg-7">
+
+                <a href="pages/portraits.html"
+                   class="featured-card featured-card-large">
+
+
+                    <div class="featured-card-image">
+
+                        <img
+                            src="assets/images/events/event 7.jpg"
+                            alt="Portrait photography by Malcolm Lismore"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <div class="featured-card-overlay">
+
+
+                        <div class="featured-card-content">
+
+                            <span class="featured-number">
+                                04
+                            </span>
+
+
+                            <h3>
+                                Portraits & Events
+                            </h3>
+
+
+                            <p>
+                                People, stories and celebrations
+                            </p>
+
+                        </div>
+
+
+                        <span class="featured-arrow">
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </span>
+
+
+                    </div>
+
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- MOBILE VIEW ALL -->
+
+        <div class="text-center d-md-none mt-5">
+
+            <a href="pages/portfolio.html"
+               class="text-link">
+
+                View All Work
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section class="services-section section-padding">
+
+
+    <div class="container">
+
+
+        <div class="row align-items-end mb-5">
+
+
+            <div class="col-lg-7">
+
+
+                <p class="section-eyebrow">
+
+                    SERVICES
+
+                </p>
+
+
+                <h2 class="section-title">
+
+                    Photography for
+
+                    <span>
+                        every story.
+                    </span>
+
+                </h2>
+
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+
+                <p class="section-description mb-0">
+
+                    From the landscapes of the Highlands to
+                    once-in-a-lifetime celebrations, Malcolm
+                    offers photography tailored to each occasion.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row g-0 service-grid">
+
+
+            <!-- LANDSCAPES -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="service-card">
+
+                    <span class="service-number">
+                        01
+                    </span>
+
+
+                    <i class="bi bi-mountains service-icon"></i>
+
+
+                    <h3>
+                        Landscapes
+                    </h3>
+
+
+                    <p>
+
+                        Dramatic landscapes and natural beauty
+                        from across Scotland.
+
+                    </p>
+
+
+                    <a href="pages/services.html">
+
+                        Explore
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- WILDLIFE -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="service-card">
+
+                    <span class="service-number">
+                        02
+                    </span>
+
+
+                    <i class="bi bi-binoculars service-icon"></i>
+
+
+                    <h3>
+                        Wildlife
+                    </h3>
+
+
+                    <p>
+
+                        Scotland's wildlife and coastal birds
+                        captured in their natural environment.
+
+                    </p>
+
+
+                    <a href="pages/services.html">
+
+                        Explore
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- WEDDINGS -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="service-card">
+
+                    <span class="service-number">
+                        03
+                    </span>
+
+
+                    <i class="bi bi-heart service-icon"></i>
+
+
+                    <h3>
+                        Weddings
+                    </h3>
+
+
+                    <p>
+
+                        Authentic photographs that preserve
+                        the atmosphere of your special day.
+
+                    </p>
+
+
+                    <a href="pages/services.html">
+
+                        Explore
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PORTRAITS -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="service-card">
+
+                    <span class="service-number">
+                        04
+                    </span>
+
+
+                    <i class="bi bi-camera service-icon"></i>
+
+
+                    <h3>
+                        Portraits & Events
+                    </h3>
+
+
+                    <p>
+
+                        Natural portraits and memorable images
+                        from special occasions.
+
+                    </p>
+
+
+                    <a href="pages/services.html">
+
+                        Explore
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT PREVIEW
+========================================================= -->
+
+<section class="about-preview-section section-padding">
+
+
+    <div class="container">
+
+
+        <div class="row align-items-center g-5">
+
+
+            <!-- IMAGE -->
+
+            <div class="col-lg-6">
+
+
+                <div class="about-image">
+
+
+                    <img
+                        src="assets/images/about/profile pic.jpg"
+                        alt="Malcolm Lismore - Scottish photographer"
+                        loading="lazy">
+
+
+                    <div class="about-image-caption">
+
+                        <span>
+                            MALCOLM LISMORE
+                        </span>
+
+                        <small>
+                            SCOTTISH PHOTOGRAPHER
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CONTENT -->
+
+            <div class="col-lg-6">
+
+
+                <div class="about-content">
+
+
+                    <p class="section-eyebrow">
+
+                        ABOUT MALCOLM
+
+                    </p>
+
+
+                    <h2 class="section-title">
+
+                        Behind the
+
+                        <span>
+                            camera.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        Photography is about more than simply
+                        taking a picture. It is about observing
+                        a place, understanding a moment and
+                        preserving something meaningful.
+
+                    </p>
+
+
+                    <p>
+
+                        Based on Scotland's North West coast,
+                        Malcolm's work is inspired by the rugged
+                        landscapes and remarkable wildlife
+                        surrounding him.
+
+                    </p>
+
+
+                    <a href="pages/about.html"
+                       class="btn btn-primary-custom">
+
+                        Meet Malcolm
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     CALL TO ACTION
+========================================================= -->
+
+<section class="cta-section">
+
+
+    <div class="cta-overlay"></div>
+
+
+    <div class="container position-relative">
+
+
+        <div class="row justify-content-center text-center">
+
+
+            <div class="col-lg-8">
+
+
+                <p class="section-eyebrow">
+
+                    LET'S CREATE SOMETHING
+
+                </p>
+
+
+                <h2 class="cta-title">
+
+                    Have a story
+
+                    <span>
+                        worth capturing?
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Tell Malcolm about your wedding,
+                    event or photography project.
+
+                </p>
+
+
+                <a href="pages/enquiry.html"
+                   class="btn btn-light-custom">
+
+                    Start an Enquiry
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+
+    <div class="container">
+
+
+        <div class="row gy-5">
+
+
+            <!-- BRAND -->
+
+            <div class="col-lg-5">
+
+
+                <a href="index.html"
+                   class="footer-brand">
+
+                    <span>
+                        MALCOLM LISMORE
+                    </span>
+
+                    <small>
+                        PHOTOGRAPHY
+                    </small>
+
+                </a>
+
+
+                <p class="footer-description">
+
+                    Scottish landscape, wildlife, wedding,
+                    portrait and event photography.
+
+                </p>
+
+
+            </div>
+
+
+            <!-- EXPLORE -->
+
+            <div class="col-6 col-lg-2">
+
+
+                <h4>
+                    Explore
+                </h4>
+
+
+                <ul>
+
+
+                    <li>
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="pages/about.html">
+                            About
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="pages/portfolio.html">
+                            Portfolio
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="pages/services.html">
+                            Services
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="col-6 col-lg-2">
+
+
+                <h4>
+                    Information
+                </h4>
+
+
+                <ul>
+
+
+                    <li>
+
+                        <a href="pages/pricing.html">
+                            Pricing
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="pages/enquiry.html">
+                            Enquire
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="pages/contact.html">
+                            Contact
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+            <!-- SOCIAL -->
+
+            <div class="col-lg-3">
+
+
+                <h4>
+                    Follow
+                </h4>
+
+
+                <div class="social-links">
+
+
+                    <a href="#"
+                       aria-label="Instagram">
+
+                        <i class="bi bi-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                       aria-label="Facebook">
+
+                        <i class="bi bi-facebook"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+
+            <p>
+
+                ©
+
+                <span id="currentYear"></span>
+
+                Malcolm Lismore Photography.
+
+                All rights reserved.
+
+            </p>
+
+
+            <p>
+
+                Designed & developed with care.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+<!-- =========================================================
+     BOOTSTRAP JAVASCRIPT
+========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- =========================================================
+     WEBSITE JAVASCRIPT
+========================================================= -->
+
+<script src="assets/js/main.js"></script>
+
+
+<!-- =========================================================
+     CURRENT YEAR
+========================================================= -->
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const yearElement =
+            document.getElementById("currentYear");
+
+        if (yearElement) {
+
+            yearElement.textContent =
+                new Date().getFullYear();
+
+        }
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
+

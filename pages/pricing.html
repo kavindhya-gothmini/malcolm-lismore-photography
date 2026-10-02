@@ -1,0 +1,2505 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Photography pricing for Malcolm Lismore Photography. Explore landscape, wildlife, wedding, portrait and event photography packages across Scotland.">
+
+    <meta name="keywords"
+          content="Malcolm Lismore photography pricing, Scotland wedding photographer prices, portrait photography prices, wildlife photography Scotland, event photography Scotland">
+
+    <meta name="author"
+          content="Malcolm Lismore Photography">
+
+    <title>Pricing | Malcolm Lismore Photography</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         WEBSITE CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="../assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/responsive.css">
+
+
+    <!-- =====================================================
+         PRICING PAGE CSS
+    ====================================================== -->
+
+    <style>
+
+        /* =====================================================
+           PAGE VARIABLES
+        ====================================================== */
+
+        :root {
+            --pricing-dark: #111111;
+            --pricing-light: #f7f6f3;
+            --pricing-border: rgba(17, 17, 17, 0.12);
+            --pricing-muted: #6d6a65;
+        }
+
+
+        /* =====================================================
+           PRICING HERO
+        ====================================================== */
+
+        .pricing-hero {
+            position: relative;
+            min-height: 68vh;
+
+            display: flex;
+            align-items: flex-end;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.94),
+                    rgba(0, 0, 0, 0.25)
+                ),
+                url("../assets/images/landscapes/nature photo 3.jpg")
+                center center / cover no-repeat;
+        }
+
+
+        .pricing-hero-content {
+            width: 100%;
+            padding-top: 180px;
+            padding-bottom: 95px;
+        }
+
+
+        .pricing-eyebrow {
+            margin-bottom: 16px;
+
+            color: var(--color-accent);
+
+            font-size: 11px;
+            font-weight: 600;
+
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+
+        .pricing-hero h1 {
+            max-width: 850px;
+
+            margin: 0;
+
+            color: var(--color-white);
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(52px, 7vw, 92px);
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -2px;
+        }
+
+
+        .pricing-hero h1 span {
+            display: block;
+            color: var(--color-accent);
+        }
+
+
+        .pricing-hero-description {
+            max-width: 620px;
+
+            margin-top: 28px;
+            margin-bottom: 0;
+
+            color: rgba(245, 243, 238, 0.78);
+
+            font-size: 16px;
+            font-weight: 300;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ====================================================== */
+
+        .pricing-breadcrumb {
+            position: absolute;
+
+            top: 110px;
+            left: 0;
+            right: 0;
+
+            z-index: 5;
+        }
+
+
+        .pricing-breadcrumb a {
+            color: rgba(245, 243, 238, 0.65);
+
+            font-size: 10px;
+            font-weight: 500;
+
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            text-decoration: none;
+
+            transition: color 0.3s ease;
+        }
+
+
+        .pricing-breadcrumb a:hover {
+            color: var(--color-accent);
+        }
+
+
+        .pricing-breadcrumb span {
+            margin: 0 10px;
+            color: var(--color-accent);
+        }
+
+
+        .pricing-breadcrumb strong {
+            color: var(--color-white);
+
+            font-size: 10px;
+            font-weight: 500;
+
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+
+        /* =====================================================
+           INTRO
+        ====================================================== */
+
+        .pricing-intro {
+            background: var(--color-white);
+            text-align: center;
+        }
+
+
+        .pricing-intro-content {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+
+        .pricing-intro-content p:last-child {
+            margin-bottom: 0;
+
+            color: var(--pricing-muted);
+
+            font-size: 15px;
+            font-weight: 300;
+
+            line-height: 1.9;
+        }
+
+
+        /* =====================================================
+           PRICING SECTION
+        ====================================================== */
+
+        .pricing-section {
+            background: var(--color-white);
+            padding-top: 30px;
+            padding-bottom: 120px;
+        }
+
+
+        .pricing-section-heading {
+            max-width: 700px;
+            margin: 0 auto 55px;
+
+            text-align: center;
+        }
+
+
+        .pricing-section-heading p:last-child {
+            margin-bottom: 0;
+
+            color: var(--pricing-muted);
+
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           PRICE CARDS
+        ====================================================== */
+
+        .pricing-card {
+            position: relative;
+
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 42px 35px;
+
+            background: #ffffff;
+
+            border: 1px solid var(--pricing-border);
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease,
+                border-color 0.35s ease;
+        }
+
+
+        .pricing-card:hover {
+            transform: translateY(-7px);
+
+            border-color: rgba(17, 17, 17, 0.25);
+
+            box-shadow:
+                0 20px 55px rgba(0, 0, 0, 0.08);
+        }
+
+
+        .pricing-card.featured {
+            background: var(--pricing-dark);
+            border-color: var(--pricing-dark);
+        }
+
+
+        /* =====================================================
+           FEATURED LABEL
+        ====================================================== */
+
+        .pricing-featured-label {
+            position: absolute;
+
+            top: 0;
+            right: 0;
+
+            padding: 9px 15px;
+
+            background: var(--color-accent);
+            color: var(--pricing-dark);
+
+            font-size: 9px;
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+
+        /* =====================================================
+           CARD ICON
+        ====================================================== */
+
+        .pricing-card-icon {
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 25px;
+
+            border: 1px solid rgba(17, 17, 17, 0.12);
+
+            color: var(--pricing-dark);
+
+            font-size: 20px;
+        }
+
+
+        .pricing-card.featured .pricing-card-icon {
+            border-color: rgba(255, 255, 255, 0.2);
+            color: var(--color-accent);
+        }
+
+
+        /* =====================================================
+           CARD CONTENT
+        ====================================================== */
+
+        .pricing-card-category {
+            margin-bottom: 10px;
+
+            color: var(--color-accent);
+
+            font-size: 10px;
+            font-weight: 600;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+
+        .pricing-card h3 {
+            margin-bottom: 15px;
+
+            color: var(--pricing-dark);
+
+            font-family: var(--font-heading);
+
+            font-size: 32px;
+            font-weight: 500;
+
+            line-height: 1.1;
+        }
+
+
+        .pricing-card.featured h3 {
+            color: var(--color-white);
+        }
+
+
+        .pricing-card-description {
+            min-height: 78px;
+
+            margin-bottom: 25px;
+
+            color: var(--pricing-muted);
+
+            font-size: 14px;
+            font-weight: 300;
+
+            line-height: 1.8;
+        }
+
+
+        .pricing-card.featured .pricing-card-description {
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+
+        /* =====================================================
+           PRICE
+        ====================================================== */
+
+        .pricing-price {
+            display: flex;
+            align-items: baseline;
+            gap: 5px;
+
+            margin-bottom: 28px;
+        }
+
+
+        .pricing-price .from {
+            color: var(--pricing-muted);
+
+            font-size: 11px;
+            font-weight: 500;
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+        .pricing-price .amount {
+            color: var(--pricing-dark);
+
+            font-family: var(--font-heading);
+
+            font-size: 44px;
+            font-weight: 500;
+
+            line-height: 1;
+        }
+
+
+        .pricing-card.featured .pricing-price .amount {
+            color: var(--color-white);
+        }
+
+
+        .pricing-price .period {
+            color: var(--pricing-muted);
+            font-size: 12px;
+        }
+
+
+        .pricing-card.featured .pricing-price .period,
+        .pricing-card.featured .pricing-price .from {
+            color: rgba(255, 255, 255, 0.55);
+        }
+
+
+        /* =====================================================
+           FEATURE LIST
+        ====================================================== */
+
+        .pricing-features {
+            margin: 0;
+            padding: 25px 0 0;
+
+            border-top: 1px solid var(--pricing-border);
+
+            list-style: none;
+        }
+
+
+        .pricing-card.featured .pricing-features {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+
+        .pricing-features li {
+            display: flex;
+            align-items: flex-start;
+
+            gap: 12px;
+
+            margin-bottom: 15px;
+
+            color: #55524e;
+
+            font-size: 13px;
+            font-weight: 300;
+
+            line-height: 1.6;
+        }
+
+
+        .pricing-card.featured .pricing-features li {
+            color: rgba(255, 255, 255, 0.72);
+        }
+
+
+        .pricing-features li i {
+            flex: 0 0 auto;
+
+            margin-top: 3px;
+
+            color: var(--color-accent);
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           CARD BUTTON
+        ====================================================== */
+
+        .pricing-card-button {
+            margin-top: auto;
+            padding-top: 25px;
+        }
+
+
+        .pricing-card-button a {
+            width: 100%;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 10px;
+
+            padding: 14px 20px;
+
+            border: 1px solid rgba(17, 17, 17, 0.2);
+
+            color: var(--pricing-dark);
+
+            font-size: 10px;
+            font-weight: 600;
+
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            text-decoration: none;
+
+            transition: all 0.3s ease;
+        }
+
+
+        .pricing-card-button a:hover {
+            background: var(--pricing-dark);
+            border-color: var(--pricing-dark);
+
+            color: var(--color-white);
+        }
+
+
+        .pricing-card.featured .pricing-card-button a {
+            border-color: rgba(255, 255, 255, 0.35);
+            color: var(--color-white);
+        }
+
+
+        .pricing-card.featured .pricing-card-button a:hover {
+            background: var(--color-accent);
+            border-color: var(--color-accent);
+
+            color: var(--pricing-dark);
+        }
+
+
+        /* =====================================================
+           CUSTOM PACKAGE SECTION
+        ====================================================== */
+
+        .custom-package-section {
+            padding: 100px 0;
+
+            background: var(--pricing-light);
+        }
+
+
+        .custom-package-box {
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 65px 70px;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    rgba(17, 17, 17, 0.97),
+                    rgba(25, 25, 25, 0.92)
+                );
+        }
+
+
+        .custom-package-box::after {
+            content: "";
+
+            position: absolute;
+
+            width: 280px;
+            height: 280px;
+
+            right: -100px;
+            bottom: -150px;
+
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            border-radius: 50%;
+        }
+
+
+        .custom-package-content {
+            position: relative;
+            z-index: 2;
+        }
+
+
+        .custom-package-box h2 {
+            max-width: 700px;
+
+            margin-bottom: 20px;
+
+            color: var(--color-white);
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(38px, 5vw, 62px);
+            font-weight: 500;
+
+            line-height: 1.1;
+        }
+
+
+        .custom-package-box h2 span {
+            color: var(--color-accent);
+        }
+
+
+        .custom-package-box p {
+            max-width: 650px;
+
+            margin-bottom: 30px;
+
+            color: rgba(255, 255, 255, 0.65);
+
+            font-size: 15px;
+            font-weight: 300;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           WHAT'S INCLUDED
+        ====================================================== */
+
+        .included-section {
+            padding: 120px 0;
+
+            background: var(--color-white);
+        }
+
+
+        .included-intro {
+            max-width: 650px;
+        }
+
+
+        .included-intro p {
+            color: var(--pricing-muted);
+
+            font-size: 15px;
+            font-weight: 300;
+
+            line-height: 1.9;
+        }
+
+
+        .included-list {
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+        }
+
+
+        .included-list li {
+            display: flex;
+            align-items: flex-start;
+
+            gap: 20px;
+
+            padding: 20px 0;
+
+            border-bottom: 1px solid var(--pricing-border);
+        }
+
+
+        .included-list li:first-child {
+            border-top: 1px solid var(--pricing-border);
+        }
+
+
+        .included-number {
+            color: var(--color-accent);
+
+            font-size: 10px;
+            font-weight: 600;
+
+            letter-spacing: 1px;
+        }
+
+
+        .included-list h4 {
+            margin: 0 0 5px;
+
+            color: var(--pricing-dark);
+
+            font-family: var(--font-heading);
+
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+
+        .included-list p {
+            margin: 0;
+
+            color: var(--pricing-muted);
+
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           FAQ
+        ====================================================== */
+
+        .pricing-faq {
+            padding: 110px 0;
+
+            background: var(--pricing-light);
+        }
+
+
+        .pricing-faq-heading {
+            max-width: 650px;
+
+            margin: 0 auto 50px;
+
+            text-align: center;
+        }
+
+
+        .pricing-faq-heading p:last-child {
+            margin-bottom: 0;
+
+            color: var(--pricing-muted);
+
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+
+        .pricing-accordion {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+
+        .pricing-accordion .accordion-item {
+            background: transparent;
+
+            border: 0;
+
+            border-bottom: 1px solid var(--pricing-border);
+
+            border-radius: 0;
+        }
+
+
+        .pricing-accordion .accordion-item:first-child {
+            border-top: 1px solid var(--pricing-border);
+        }
+
+
+        .pricing-accordion .accordion-button {
+            padding: 25px 5px;
+
+            background: transparent;
+
+            box-shadow: none;
+
+            color: var(--pricing-dark);
+
+            font-family: var(--font-heading);
+
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+
+        .pricing-accordion .accordion-button::after {
+            background-size: 14px;
+        }
+
+
+        .pricing-accordion .accordion-button:not(.collapsed) {
+            background: transparent;
+
+            color: var(--pricing-dark);
+        }
+
+
+        .pricing-accordion .accordion-body {
+            padding: 0 45px 25px 5px;
+
+            color: var(--pricing-muted);
+
+            font-size: 14px;
+            font-weight: 300;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           FINAL CTA
+        ====================================================== */
+
+        .pricing-cta {
+            padding: 120px 0;
+
+            background: var(--pricing-dark);
+
+            text-align: center;
+        }
+
+
+        .pricing-cta h2 {
+            max-width: 800px;
+
+            margin: 0 auto 22px;
+
+            color: var(--color-white);
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(42px, 6vw, 70px);
+            font-weight: 500;
+
+            line-height: 1.1;
+        }
+
+
+        .pricing-cta h2 span {
+            color: var(--color-accent);
+        }
+
+
+        .pricing-cta p {
+            max-width: 600px;
+
+            margin: 0 auto 32px;
+
+            color: var(--color-text-muted);
+
+            font-size: 15px;
+            font-weight: 300;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 991.98px) {
+
+            .pricing-hero {
+                min-height: 62vh;
+            }
+
+            .pricing-card {
+                padding: 35px 28px;
+            }
+
+            .pricing-card-description {
+                min-height: auto;
+            }
+
+            .custom-package-box {
+                padding: 55px 45px;
+            }
+
+            .included-section {
+                padding: 90px 0;
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+
+            .pricing-hero {
+                min-height: 65vh;
+            }
+
+            .pricing-breadcrumb {
+                top: 95px;
+            }
+
+            .pricing-hero-content {
+                padding-top: 165px;
+                padding-bottom: 65px;
+            }
+
+            .pricing-hero h1 {
+                font-size: 50px;
+                letter-spacing: -1px;
+            }
+
+            .pricing-hero-description {
+                font-size: 14px;
+            }
+
+            .pricing-section {
+                padding-bottom: 80px;
+            }
+
+            .pricing-section-heading {
+                margin-bottom: 40px;
+            }
+
+            .pricing-card {
+                padding: 35px 25px;
+            }
+
+            .custom-package-section {
+                padding: 70px 0;
+            }
+
+            .custom-package-box {
+                padding: 45px 30px;
+            }
+
+            .included-section {
+                padding: 80px 0;
+            }
+
+            .pricing-faq {
+                padding: 80px 0;
+            }
+
+            .pricing-cta {
+                padding: 85px 20px;
+            }
+
+        }
+
+
+        @media (max-width: 575.98px) {
+
+            .pricing-hero h1 {
+                font-size: 43px;
+            }
+
+            .pricing-hero-description {
+                font-size: 13px;
+                line-height: 1.75;
+            }
+
+            .pricing-card {
+                padding: 30px 22px;
+            }
+
+            .pricing-card h3 {
+                font-size: 28px;
+            }
+
+            .pricing-price .amount {
+                font-size: 38px;
+            }
+
+            .custom-package-box {
+                padding: 40px 23px;
+            }
+
+            .custom-package-box h2 {
+                font-size: 38px;
+            }
+
+            .pricing-accordion .accordion-button {
+                font-size: 18px;
+                padding: 22px 0;
+            }
+
+            .pricing-accordion .accordion-body {
+                padding-left: 0;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="site-header">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+            <!-- BRAND -->
+
+            <a class="navbar-brand"
+               href="../index.html">
+
+                <span class="brand-name">
+                    MALCOLM LISMORE
+                </span>
+
+                <span class="brand-subtitle">
+                    PHOTOGRAPHY
+                </span>
+
+            </a>
+
+
+            <!-- MOBILE TOGGLE -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- NAVIGATION -->
+
+            <div class="collapse navbar-collapse"
+                 id="mainNavigation">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="../index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="portfolio.html">
+
+                            Portfolio
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="services.html">
+
+                            Services
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active"
+                           href="pricing.html">
+
+                            Pricing
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item ms-lg-3">
+
+                        <a class="nav-link enquiry-nav-link"
+                           href="enquiry.html">
+
+                            Make an Enquiry
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="pricing-hero">
+
+
+    <!-- BREADCRUMB -->
+
+    <div class="pricing-breadcrumb">
+
+        <div class="container">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <span>/</span>
+
+            <strong>
+                Pricing
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO CONTENT -->
+
+    <div class="container">
+
+        <div class="pricing-hero-content">
+
+            <p class="pricing-eyebrow">
+                PHOTOGRAPHY INVESTMENT
+            </p>
+
+
+            <h1>
+
+                Photography
+                <span>for your story.</span>
+
+            </h1>
+
+
+            <p class="pricing-hero-description">
+
+                Simple, transparent photography packages
+                designed around your occasion, your location
+                and the moments that matter most.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="pricing-intro section-padding">
+
+    <div class="container">
+
+        <div class="pricing-intro-content">
+
+            <p class="section-eyebrow">
+                INVESTMENT
+            </p>
+
+
+            <h2 class="section-title">
+
+                Choose what
+                <span>fits your story.</span>
+
+            </h2>
+
+
+            <p>
+
+                Every photography session is different.
+                These packages provide a starting point,
+                with flexible options available for
+                individual requirements.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRICING CARDS
+========================================================= -->
+
+<section class="pricing-section">
+
+    <div class="container">
+
+
+        <div class="pricing-section-heading">
+
+            <p class="section-eyebrow">
+                PHOTOGRAPHY PACKAGES
+            </p>
+
+            <h2 class="section-title">
+                Photography
+                <span>packages.</span>
+            </h2>
+
+            <p>
+                Select a package below or get in touch to
+                create a completely bespoke photography
+                experience.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- =================================================
+                 LANDSCAPE
+            ================================================== -->
+
+            <div class="col-lg-4">
+
+                <div class="pricing-card">
+
+
+                    <div class="pricing-card-icon">
+
+                        <i class="bi bi-mountains"></i>
+
+                    </div>
+
+
+                    <p class="pricing-card-category">
+                        Landscape
+                    </p>
+
+
+                    <h3>
+                        Scottish Landscapes
+                    </h3>
+
+
+                    <p class="pricing-card-description">
+
+                        Outdoor photography sessions
+                        capturing Scotland's dramatic
+                        landscapes and natural beauty.
+
+                    </p>
+
+
+                    <div class="pricing-price">
+
+                        <span class="from">
+                            From
+                        </span>
+
+                        <span class="amount">
+                            £250
+                        </span>
+
+                    </div>
+
+
+                    <ul class="pricing-features">
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Up to 3 hours photography
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Location consultation
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Professionally edited images
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                High-resolution digital gallery
+                            </span>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="pricing-card-button">
+
+                        <a href="enquiry.html">
+
+                            Enquire About This
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 WEDDING
+            ================================================== -->
+
+            <div class="col-lg-4">
+
+                <div class="pricing-card featured">
+
+
+                    <span class="pricing-featured-label">
+                        MOST POPULAR
+                    </span>
+
+
+                    <div class="pricing-card-icon">
+
+                        <i class="bi bi-heart"></i>
+
+                    </div>
+
+
+                    <p class="pricing-card-category">
+                        Weddings
+                    </p>
+
+
+                    <h3>
+                        Wedding Photography
+                    </h3>
+
+
+                    <p class="pricing-card-description">
+
+                        Beautiful, natural wedding
+                        photography focused on genuine
+                        moments and lasting memories.
+
+                    </p>
+
+
+                    <div class="pricing-price">
+
+                        <span class="from">
+                            From
+                        </span>
+
+                        <span class="amount">
+                            £950
+                        </span>
+
+                    </div>
+
+
+                    <ul class="pricing-features">
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Wedding-day coverage
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Pre-wedding consultation
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Professionally edited photographs
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Private online gallery
+                            </span>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="pricing-card-button">
+
+                        <a href="enquiry.html">
+
+                            Plan Your Wedding
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PORTRAIT
+            ================================================== -->
+
+            <div class="col-lg-4">
+
+                <div class="pricing-card">
+
+
+                    <div class="pricing-card-icon">
+
+                        <i class="bi bi-person"></i>
+
+                    </div>
+
+
+                    <p class="pricing-card-category">
+                        Portraits
+                    </p>
+
+
+                    <h3>
+                        Portrait Sessions
+                    </h3>
+
+
+                    <p class="pricing-card-description">
+
+                        Relaxed portrait sessions for
+                        individuals, families, creatives
+                        and professional profiles.
+
+                    </p>
+
+
+                    <div class="pricing-price">
+
+                        <span class="from">
+                            From
+                        </span>
+
+                        <span class="amount">
+                            £180
+                        </span>
+
+                    </div>
+
+
+                    <ul class="pricing-features">
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Up to 90 minutes
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Indoor or outdoor location
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Professional image editing
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Digital image gallery
+                            </span>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="pricing-card-button">
+
+                        <a href="enquiry.html">
+
+                            Book A Session
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SECOND ROW
+        ================================================== -->
+
+        <div class="row g-4 mt-1">
+
+
+            <!-- WILDLIFE -->
+
+            <div class="col-lg-6">
+
+                <div class="pricing-card">
+
+
+                    <div class="pricing-card-icon">
+
+                        <i class="bi bi-binoculars"></i>
+
+                    </div>
+
+
+                    <p class="pricing-card-category">
+                        Wildlife
+                    </p>
+
+
+                    <h3>
+                        Wildlife & Coastal Birds
+                    </h3>
+
+
+                    <p class="pricing-card-description">
+
+                        Wildlife photography experiences
+                        focused on Scotland's remarkable
+                        animals, birds and coastal habitats.
+
+                    </p>
+
+
+                    <div class="pricing-price">
+
+                        <span class="from">
+                            From
+                        </span>
+
+                        <span class="amount">
+                            £220
+                        </span>
+
+                    </div>
+
+
+                    <ul class="pricing-features">
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Guided photography session
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Location planning
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Professionally edited images
+                            </span>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="pricing-card-button">
+
+                        <a href="enquiry.html">
+
+                            Enquire Now
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EVENTS -->
+
+            <div class="col-lg-6">
+
+                <div class="pricing-card">
+
+
+                    <div class="pricing-card-icon">
+
+                        <i class="bi bi-calendar-event"></i>
+
+                    </div>
+
+
+                    <p class="pricing-card-category">
+                        Events
+                    </p>
+
+
+                    <h3>
+                        Events & Special Occasions
+                    </h3>
+
+
+                    <p class="pricing-card-description">
+
+                        Professional event photography
+                        covering celebrations, gatherings,
+                        corporate occasions and special moments.
+
+                    </p>
+
+
+                    <div class="pricing-price">
+
+                        <span class="from">
+                            From
+                        </span>
+
+                        <span class="amount">
+                            £300
+                        </span>
+
+                    </div>
+
+
+                    <ul class="pricing-features">
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Flexible event coverage
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Candid and formal photography
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check"></i>
+                            <span>
+                                Professionally edited gallery
+                            </span>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="pricing-card-button">
+
+                        <a href="enquiry.html">
+
+                            Discuss Your Event
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CUSTOM PACKAGE
+========================================================= -->
+
+<section class="custom-package-section">
+
+    <div class="container">
+
+        <div class="custom-package-box">
+
+            <div class="custom-package-content">
+
+                <p class="section-eyebrow">
+                    BESPOKE PHOTOGRAPHY
+                </p>
+
+
+                <h2>
+
+                    Need something
+                    <span>different?</span>
+
+                </h2>
+
+
+                <p>
+
+                    Whether you're planning a multi-day
+                    wedding, a commercial photography project,
+                    a large event or a unique outdoor session,
+                    a bespoke package can be created around
+                    your requirements.
+
+                </p>
+
+
+                <a href="enquiry.html"
+                   class="btn btn-light-custom">
+
+                    Create A Custom Package
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     WHAT'S INCLUDED
+========================================================= -->
+
+<section class="included-section">
+
+    <div class="container">
+
+        <div class="row align-items-start g-5">
+
+
+            <div class="col-lg-5">
+
+                <div class="included-intro">
+
+                    <p class="section-eyebrow">
+                        THE EXPERIENCE
+                    </p>
+
+
+                    <h2 class="section-title">
+
+                        More than
+                        <span>just photographs.</span>
+
+                    </h2>
+
+
+                    <p>
+
+                        Every session is approached with
+                        care, attention to detail and a focus
+                        on creating photographs that remain
+                        meaningful long after the day itself.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-lg-6 offset-lg-1">
+
+                <ul class="included-list">
+
+
+                    <li>
+
+                        <span class="included-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                Personal Consultation
+                            </h4>
+
+                            <p>
+                                We discuss your ideas, location,
+                                schedule and photography requirements
+                                before the session.
+                            </p>
+
+                        </div>
+
+                    </li>
+
+
+                    <li>
+
+                        <span class="included-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                Thoughtful Photography
+                            </h4>
+
+                            <p>
+                                A relaxed approach focused on
+                                authentic moments, natural expressions
+                                and beautiful surroundings.
+                            </p>
+
+                        </div>
+
+                    </li>
+
+
+                    <li>
+
+                        <span class="included-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                Professional Editing
+                            </h4>
+
+                            <p>
+                                Selected photographs are carefully
+                                edited to create a consistent,
+                                polished final collection.
+                            </p>
+
+                        </div>
+
+                    </li>
+
+
+                    <li>
+
+                        <span class="included-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                Private Online Gallery
+                            </h4>
+
+                            <p>
+                                Your finished photographs are
+                                delivered through a convenient
+                                private digital gallery.
+                            </p>
+
+                        </div>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="pricing-faq">
+
+    <div class="container">
+
+
+        <div class="pricing-faq-heading">
+
+            <p class="section-eyebrow">
+                COMMON QUESTIONS
+            </p>
+
+
+            <h2 class="section-title">
+
+                Pricing
+                <span>questions.</span>
+
+            </h2>
+
+
+            <p>
+
+                A few answers to common questions about
+                photography packages and bookings.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="accordion pricing-accordion"
+             id="pricingFAQ">
+
+
+            <!-- FAQ 01 -->
+
+            <div class="accordion-item">
+
+                <h3 class="accordion-header">
+
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqOne"
+                        aria-expanded="true"
+                        aria-controls="faqOne">
+
+                        Can I create a custom package?
+
+                    </button>
+
+                </h3>
+
+
+                <div id="faqOne"
+                     class="accordion-collapse collapse show"
+                     data-bs-parent="#pricingFAQ">
+
+                    <div class="accordion-body">
+
+                        Yes. Every photography project is
+                        different, so bespoke packages can be
+                        created for weddings, events, commercial
+                        work, extended sessions and other
+                        requirements.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FAQ 02 -->
+
+            <div class="accordion-item">
+
+                <h3 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqTwo"
+                        aria-expanded="false"
+                        aria-controls="faqTwo">
+
+                        Do the prices include edited photographs?
+
+                    </button>
+
+                </h3>
+
+
+                <div id="faqTwo"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#pricingFAQ">
+
+                    <div class="accordion-body">
+
+                        Yes. Selected photographs are professionally
+                        edited before being delivered through your
+                        private digital gallery.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FAQ 03 -->
+
+            <div class="accordion-item">
+
+                <h3 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqThree"
+                        aria-expanded="false"
+                        aria-controls="faqThree">
+
+                        Do you travel for photography assignments?
+
+                    </button>
+
+                </h3>
+
+
+                <div id="faqThree"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#pricingFAQ">
+
+                    <div class="accordion-body">
+
+                        Photography assignments can be arranged
+                        across Scotland. Travel requirements and
+                        any associated costs can be discussed
+                        when planning your session.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FAQ 04 -->
+
+            <div class="accordion-item">
+
+                <h3 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqFour"
+                        aria-expanded="false"
+                        aria-controls="faqFour">
+
+                        How do I book a photography session?
+
+                    </button>
+
+                </h3>
+
+
+                <div id="faqFour"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#pricingFAQ">
+
+                    <div class="accordion-body">
+
+                        Simply send an enquiry with your preferred
+                        date, location, photography type and any
+                        additional requirements. Malcolm will then
+                        respond to discuss availability and the
+                        next steps.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FAQ 05 -->
+
+            <div class="accordion-item">
+
+                <h3 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqFive"
+                        aria-expanded="false"
+                        aria-controls="faqFive">
+
+                        Are the prices fixed?
+
+                    </button>
+
+                </h3>
+
+
+                <div id="faqFive"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#pricingFAQ">
+
+                    <div class="accordion-body">
+
+                        The prices shown are starting prices.
+                        Final pricing may vary depending on
+                        coverage time, location, travel,
+                        requirements and the type of photography
+                        requested.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="pricing-cta">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+
+                <p class="section-eyebrow">
+                    LET'S TALK
+                </p>
+
+
+                <h2>
+
+                    Have a story
+                    <span>worth capturing?</span>
+
+                </h2>
+
+
+                <p>
+
+                    Tell Malcolm what you have in mind and
+                    let's create a photography package that
+                    works for you.
+
+                </p>
+
+
+                <a href="enquiry.html"
+                   class="btn btn-light-custom">
+
+                    Make An Enquiry
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="row gy-5">
+
+
+            <!-- BRAND -->
+
+            <div class="col-lg-5">
+
+                <a href="../index.html"
+                   class="footer-brand">
+
+                    <span>
+                        MALCOLM LISMORE
+                    </span>
+
+                    <small>
+                        PHOTOGRAPHY
+                    </small>
+
+                </a>
+
+
+                <p class="footer-description">
+
+                    Scottish landscape, wildlife, wedding,
+                    portrait and event photography.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- EXPLORE -->
+
+            <div class="col-6 col-lg-2">
+
+                <h4>
+                    Explore
+                </h4>
+
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="portfolio.html">
+                            Portfolio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- INFORMATION -->
+
+            <div class="col-6 col-lg-2">
+
+                <h4>
+                    Information
+                </h4>
+
+
+                <ul>
+
+                    <li>
+                        <a href="pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="enquiry.html">
+                            Enquire
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- SOCIAL -->
+
+            <div class="col-lg-3">
+
+                <h4>
+                    Follow
+                </h4>
+
+
+                <div class="social-links">
+
+                    <a href="#"
+                       aria-label="Instagram">
+
+                        <i class="bi bi-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                       aria-label="Facebook">
+
+                        <i class="bi bi-facebook"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © <span id="currentYear"></span>
+                Malcolm Lismore Photography.
+                All rights reserved.
+
+            </p>
+
+
+            <p>
+                Designed & developed with care.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- =========================================================
+     CUSTOM JS
+========================================================= -->
+
+<script src="../assets/js/main.js"></script>
+
+
+

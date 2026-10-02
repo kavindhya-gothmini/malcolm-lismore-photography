@@ -1,0 +1,2072 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Make an enquiry with Malcolm Lismore Photography for landscape, wildlife, wedding, portrait and event photography across Scotland.">
+
+    <meta name="keywords"
+          content="Malcolm Lismore Photography enquiry, Scottish photographer, wedding photography Scotland, landscape photography Scotland, portrait photographer">
+
+    <meta name="author"
+          content="Malcolm Lismore Photography">
+
+    <title>Make an Enquiry | Malcolm Lismore Photography</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         WEBSITE CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="../assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="../assets/css/responsive.css">
+
+
+    <!-- =====================================================
+         ENQUIRY PAGE CSS
+    ====================================================== -->
+
+    <style>
+
+        /* =====================================================
+           PAGE HERO
+        ====================================================== */
+
+        .enquiry-hero {
+
+            position: relative;
+
+            min-height: 62vh;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.94),
+                    rgba(0, 0, 0, 0.20)
+                ),
+                url("../assets/images/weddings/wedding photo 1.jpg")
+                center / cover no-repeat;
+
+        }
+
+
+        .enquiry-hero-content {
+
+            width: 100%;
+
+            padding-top: 170px;
+
+            padding-bottom: 85px;
+
+        }
+
+
+        .enquiry-eyebrow {
+
+            margin-bottom: 16px;
+
+            color: var(--color-accent);
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .enquiry-hero h1 {
+
+            max-width: 850px;
+
+            margin: 0;
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(52px, 7vw, 92px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -2px;
+
+            color: var(--color-white);
+
+        }
+
+
+        .enquiry-hero h1 span {
+
+            display: block;
+
+            color: var(--color-accent);
+
+        }
+
+
+        .enquiry-hero-description {
+
+            max-width: 620px;
+
+            margin-top: 25px;
+
+            margin-bottom: 0;
+
+            color: rgba(245, 243, 238, 0.78);
+
+            font-size: 16px;
+
+            font-weight: 300;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ====================================================== */
+
+        .enquiry-breadcrumb {
+
+            position: absolute;
+
+            top: 110px;
+
+            left: 0;
+
+            right: 0;
+
+            z-index: 5;
+
+        }
+
+
+        .enquiry-breadcrumb a {
+
+            color: rgba(245, 243, 238, 0.65);
+
+            font-size: 10px;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            text-decoration: none;
+
+        }
+
+
+        .enquiry-breadcrumb a:hover {
+
+            color: var(--color-accent);
+
+        }
+
+
+        .enquiry-breadcrumb span {
+
+            margin: 0 10px;
+
+            color: var(--color-accent);
+
+        }
+
+
+        .enquiry-breadcrumb strong {
+
+            color: var(--color-white);
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* =====================================================
+           INTRO
+        ====================================================== */
+
+        .enquiry-intro {
+
+            padding: 100px 0 70px;
+
+            background: var(--color-white);
+
+        }
+
+
+        .enquiry-intro-content {
+
+            max-width: 760px;
+
+            margin: 0 auto;
+
+            text-align: center;
+
+        }
+
+
+        .enquiry-intro-content p:last-child {
+
+            margin-bottom: 0;
+
+            color: #6e6b66;
+
+            font-size: 15px;
+
+            font-weight: 300;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =====================================================
+           FORM SECTION
+        ====================================================== */
+
+        .enquiry-section {
+
+            padding: 30px 0 120px;
+
+            background: var(--color-white);
+
+        }
+
+
+        .enquiry-layout {
+
+            max-width: 1180px;
+
+            margin: 0 auto;
+
+        }
+
+
+        /* =====================================================
+           INFORMATION PANEL
+        ====================================================== */
+
+        .enquiry-info {
+
+            height: 100%;
+
+            padding: 50px;
+
+            background: #111111;
+
+            color: var(--color-white);
+
+        }
+
+
+        .enquiry-info .section-eyebrow {
+
+            color: var(--color-accent);
+
+        }
+
+
+        .enquiry-info h2 {
+
+            margin-bottom: 25px;
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(35px, 4vw, 52px);
+
+            font-weight: 500;
+
+            line-height: 1.1;
+
+        }
+
+
+        .enquiry-info h2 span {
+
+            color: var(--color-accent);
+
+        }
+
+
+        .enquiry-info-description {
+
+            margin-bottom: 40px;
+
+            color: rgba(255,255,255,0.68);
+
+            font-size: 14px;
+
+            font-weight: 300;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =====================================================
+           CONTACT DETAILS
+        ====================================================== */
+
+        .enquiry-contact-list {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 25px;
+
+        }
+
+
+        .enquiry-contact-item {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 16px;
+
+        }
+
+
+        .enquiry-contact-icon {
+
+            flex: 0 0 42px;
+
+            width: 42px;
+
+            height: 42px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border: 1px solid rgba(255,255,255,0.20);
+
+            color: var(--color-accent);
+
+            font-size: 17px;
+
+        }
+
+
+        .enquiry-contact-text span {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: rgba(255,255,255,0.45);
+
+            font-size: 9px;
+
+            font-weight: 600;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .enquiry-contact-text strong,
+
+        .enquiry-contact-text a {
+
+            color: var(--color-white);
+
+            font-size: 14px;
+
+            font-weight: 400;
+
+            text-decoration: none;
+
+        }
+
+
+        .enquiry-contact-text a:hover {
+
+            color: var(--color-accent);
+
+        }
+
+
+        /* =====================================================
+           FORM CARD
+        ====================================================== */
+
+        .enquiry-form-card {
+
+            padding: 50px;
+
+            border: 1px solid rgba(17,17,17,0.10);
+
+            background: #ffffff;
+
+        }
+
+
+        .enquiry-form-heading {
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .enquiry-form-heading h2 {
+
+            margin-bottom: 10px;
+
+            font-family: var(--font-heading);
+
+            font-size: 38px;
+
+            font-weight: 500;
+
+            color: var(--color-black);
+
+        }
+
+
+        .enquiry-form-heading p {
+
+            margin: 0;
+
+            color: #77736d;
+
+            font-size: 14px;
+
+            font-weight: 300;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* =====================================================
+           FORM LABELS
+        ====================================================== */
+
+        .enquiry-form .form-label {
+
+            margin-bottom: 9px;
+
+            color: #33312e;
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.4px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .enquiry-form .form-control,
+
+        .enquiry-form .form-select {
+
+            min-height: 52px;
+
+            padding: 14px 16px;
+
+            border: 1px solid rgba(17,17,17,0.16);
+
+            border-radius: 0;
+
+            background: #ffffff;
+
+            color: #222;
+
+            font-family: var(--font-body);
+
+            font-size: 14px;
+
+            font-weight: 400;
+
+            box-shadow: none;
+
+            transition: all 0.25s ease;
+
+        }
+
+
+        .enquiry-form textarea.form-control {
+
+            min-height: 155px;
+
+            resize: vertical;
+
+        }
+
+
+        .enquiry-form .form-control:focus,
+
+        .enquiry-form .form-select:focus {
+
+            border-color: var(--color-black);
+
+            box-shadow: 0 0 0 3px rgba(17,17,17,0.05);
+
+        }
+
+
+        .enquiry-form .form-control::placeholder {
+
+            color: #aaa6a0;
+
+            font-weight: 300;
+
+        }
+
+
+        /* =====================================================
+           CHECKBOX
+        ====================================================== */
+
+        .enquiry-check {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 10px;
+
+            margin-top: 5px;
+
+        }
+
+
+        .enquiry-check input {
+
+            margin-top: 4px;
+
+            width: 15px;
+
+            height: 15px;
+
+            accent-color: #111111;
+
+        }
+
+
+        .enquiry-check label {
+
+            color: #77736d;
+
+            font-size: 12px;
+
+            font-weight: 300;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* =====================================================
+           SUBMIT BUTTON
+        ====================================================== */
+
+        .enquiry-submit {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            min-height: 54px;
+
+            padding: 14px 30px;
+
+            border: 1px solid var(--color-black);
+
+            background: var(--color-black);
+
+            color: var(--color-white);
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.6px;
+
+            text-transform: uppercase;
+
+            text-decoration: none;
+
+            transition: all 0.3s ease;
+
+        }
+
+
+        .enquiry-submit:hover {
+
+            background: var(--color-accent);
+
+            border-color: var(--color-accent);
+
+            color: var(--color-black);
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* =====================================================
+           PROCESS SECTION
+        ====================================================== */
+
+        .enquiry-process {
+
+            padding: 110px 0;
+
+            background: #f5f3ee;
+
+        }
+
+
+        .process-heading {
+
+            max-width: 650px;
+
+            margin: 0 auto 55px;
+
+            text-align: center;
+
+        }
+
+
+        .process-heading h2 {
+
+            margin-bottom: 15px;
+
+            font-family: var(--font-heading);
+
+            font-size: clamp(38px, 5vw, 58px);
+
+            font-weight: 500;
+
+            line-height: 1.1;
+
+        }
+
+
+        .process-heading h2 span {
+
+            color: var(--color-accent);
+
+        }
+
+
+        .process-heading p {
+
+            margin: 0;
+
+            color: #6e6b66;
+
+            font-size: 14px;
+
+            line-height: 1.8;
+
+        }
+
+
+        .process-card {
+
+            height: 100%;
+
+            padding: 35px;
+
+            background: #ffffff;
+
+            border: 1px solid rgba(17,17,17,0.08);
+
+            transition: transform 0.3s ease;
+
+        }
+
+
+        .process-card:hover {
+
+            transform: translateY(-5px);
+
+        }
+
+
+        .process-number {
+
+            display: block;
+
+            margin-bottom: 30px;
+
+            color: var(--color-accent);
+
+            font-family: var(--font-heading);
+
+            font-size: 30px;
+
+        }
+
+
+        .process-card h3 {
+    margin-bottom: 14px;
+    font-family: var(--font-heading);
+    font-size: 25px;
+    font-weight: 500;
+    color: #333333;
+}
+
+        .process-card p {
+
+            margin: 0;
+
+            color: #3b3b3b;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           FAQ / NOTE
+        ====================================================== */
+
+        .enquiry-note {
+
+            padding: 90px 0;
+
+            background: #ffffff;
+
+            text-align: center;
+
+        }
+
+
+        .enquiry-note-inner {
+
+            max-width: 700px;
+
+            margin: auto;
+
+        }
+
+
+        .enquiry-note h2 {
+
+            margin-bottom: 18px;
+
+            font-family: var(--font-heading);
+
+            font-size: 42px;
+
+            font-weight: 500;
+            color: #474901;
+
+        }
+
+
+        .enquiry-note p {
+
+            margin: 0;
+
+            color: #77736d;
+
+            font-size: 14px;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 991.98px) {
+
+            .enquiry-hero {
+
+                min-height: 58vh;
+
+            }
+
+            .enquiry-info {
+
+                padding: 40px;
+
+            }
+
+            .enquiry-form-card {
+
+                padding: 40px;
+
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+
+            .enquiry-hero {
+
+                min-height: 65vh;
+
+            }
+
+            .enquiry-breadcrumb {
+
+                top: 95px;
+
+            }
+
+            .enquiry-hero-content {
+
+                padding-top: 160px;
+
+                padding-bottom: 60px;
+
+            }
+
+            .enquiry-hero h1 {
+
+                font-size: 52px;
+
+            }
+
+            .enquiry-hero-description {
+
+                font-size: 14px;
+
+            }
+
+            .enquiry-intro {
+
+                padding: 75px 0 50px;
+
+            }
+
+            .enquiry-section {
+
+                padding-bottom: 80px;
+
+            }
+
+            .enquiry-info,
+
+            .enquiry-form-card {
+
+                padding: 30px;
+
+            }
+
+            .enquiry-form-heading h2 {
+
+                font-size: 32px;
+
+            }
+
+            .enquiry-process {
+
+                padding: 75px 0;
+
+            }
+
+        }
+
+
+        @media (max-width: 575.98px) {
+
+            .enquiry-hero h1 {
+
+                font-size: 43px;
+
+                letter-spacing: -1px;
+
+            }
+
+            .enquiry-hero-description {
+
+                font-size: 13px;
+
+                line-height: 1.7;
+
+            }
+
+            .enquiry-info,
+
+            .enquiry-form-card {
+
+                padding: 25px 20px;
+
+            }
+
+            .enquiry-contact-item {
+
+                gap: 12px;
+
+            }
+
+            .process-card {
+
+                padding: 28px 24px;
+
+            }
+
+            .enquiry-submit {
+
+                width: 100%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="site-header">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="../index.html">
+
+                <span class="brand-name">
+                    MALCOLM LISMORE
+                </span>
+
+                <span class="brand-subtitle">
+                    PHOTOGRAPHY
+                </span>
+
+            </a>
+
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse"
+                 id="mainNavigation">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="../index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="portfolio.html">
+
+                            Portfolio
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="services.html">
+
+                            Services
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="pricing.html">
+
+                            Pricing
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item ms-lg-3">
+
+                        <a class="nav-link enquiry-nav-link active"
+                           href="enquiry.html">
+
+                            Make an Enquiry
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="enquiry-hero">
+
+    <div class="enquiry-breadcrumb">
+
+        <div class="container">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <span>/</span>
+
+            <strong>
+                Make an Enquiry
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="enquiry-hero-content">
+
+            <p class="enquiry-eyebrow">
+                LET'S WORK TOGETHER
+            </p>
+
+
+            <h1>
+
+                Tell me about
+                <span>your story.</span>
+
+            </h1>
+
+
+            <p class="enquiry-hero-description">
+
+                Whether you're planning a wedding,
+                looking for a portrait session or
+                simply want to capture the beauty of
+                Scotland, I'd love to hear from you.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INTRODUCTION
+========================================================= -->
+
+<section class="enquiry-intro">
+
+    <div class="container">
+
+        <div class="enquiry-intro-content">
+
+            <p class="section-eyebrow">
+                START A CONVERSATION
+            </p>
+
+
+            <h2 class="section-title">
+
+                Let's create something
+                <span>meaningful.</span>
+
+            </h2>
+
+
+            <p>
+
+                Every photography project is different.
+                Share a few details about what you have
+                in mind and I'll get back to you with
+                availability and next steps.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ENQUIRY FORM
+========================================================= -->
+
+<section class="enquiry-section">
+
+    <div class="container">
+
+        <div class="enquiry-layout">
+
+            <div class="row g-0">
+
+
+                <!-- =========================================
+                     CONTACT INFORMATION
+                ========================================== -->
+
+                <div class="col-lg-5">
+
+                    <div class="enquiry-info">
+
+                        <p class="section-eyebrow">
+                            GET IN TOUCH
+                        </p>
+
+
+                        <h2>
+
+                            Your story
+                            <span>starts here.</span>
+
+                        </h2>
+
+
+                        <p class="enquiry-info-description">
+
+                            Tell me what you're planning,
+                            where you're based and what
+                            you'd like photographed.
+                            I'll review your enquiry and
+                            get back to you as soon as possible.
+
+                        </p>
+
+
+                        <div class="enquiry-contact-list">
+
+
+                            <div class="enquiry-contact-item">
+
+                                <div class="enquiry-contact-icon">
+
+                                    <i class="bi bi-envelope"></i>
+
+                                </div>
+
+                                <div class="enquiry-contact-text">
+
+                                    <span>
+                                        Email
+                                    </span>
+
+                                    <a href="mailto:hello@malcolmlismorephotography.co.uk">
+
+                                        hello@malcolmlismorephotography.co.uk
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="enquiry-contact-item">
+
+                                <div class="enquiry-contact-icon">
+
+                                    <i class="bi bi-geo-alt"></i>
+
+                                </div>
+
+                                <div class="enquiry-contact-text">
+
+                                    <span>
+                                        Location
+                                    </span>
+
+                                    <strong>
+                                        North West Coast, Scotland
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="enquiry-contact-item">
+
+                                <div class="enquiry-contact-icon">
+
+                                    <i class="bi bi-camera"></i>
+
+                                </div>
+
+                                <div class="enquiry-contact-text">
+
+                                    <span>
+                                        Photography
+                                    </span>
+
+                                    <strong>
+                                        Weddings · Wildlife · Landscapes · Portraits
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     FORM
+                ========================================== -->
+
+                <div class="col-lg-7">
+
+                    <div class="enquiry-form-card">
+
+                        <div class="enquiry-form-heading">
+
+                            <h2>
+                                Make an enquiry
+                            </h2>
+
+                            <p>
+                                Please complete the form below
+                                and I'll be in touch.
+                            </p>
+
+                        </div>
+
+
+                        <form
+                            class="enquiry-form"
+                            action="#"
+                            method="post">
+
+
+                            <!-- NAME -->
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+
+                                    <label
+                                        for="firstName"
+                                        class="form-label">
+
+                                        First Name *
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="firstName"
+                                        name="first_name"
+                                        placeholder="Your first name"
+                                        autocomplete="given-name"
+                                        required>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label
+                                        for="lastName"
+                                        class="form-label">
+
+                                        Last Name *
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="lastName"
+                                        name="last_name"
+                                        placeholder="Your last name"
+                                        autocomplete="family-name"
+                                        required>
+
+                                </div>
+
+
+                                <!-- EMAIL -->
+
+                                <div class="col-md-6">
+
+                                    <label
+                                        for="email"
+                                        class="form-label">
+
+                                        Email Address *
+
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        name="email"
+                                        placeholder="you@example.com"
+                                        autocomplete="email"
+                                        required>
+
+                                </div>
+
+
+                                <!-- PHONE -->
+
+                                <div class="col-md-6">
+
+                                    <label
+                                        for="phone"
+                                        class="form-label">
+
+                                        Phone Number
+
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="+44..."
+                                        autocomplete="tel">
+
+                                </div>
+
+
+                                <!-- SERVICE -->
+
+                                <div class="col-md-6">
+
+                                    <label
+                                        for="service"
+                                        class="form-label">
+
+                                        Photography Service *
+
+                                    </label>
+
+                                    <select
+                                        class="form-select"
+                                        id="service"
+                                        name="service"
+                                        required>
+
+                                        <option value=""
+                                                selected
+                                                disabled>
+
+                                            Select a service
+
+                                        </option>
+
+                                        <option value="landscape">
+                                            Landscape Photography
+                                        </option>
+
+                                        <option value="wildlife">
+                                            Wildlife Photography
+                                        </option>
+
+                                        <option value="birds">
+                                            Coastal Bird Photography
+                                        </option>
+
+                                        <option value="wedding">
+                                            Wedding Photography
+                                        </option>
+
+                                        <option value="portrait">
+                                            Portrait Photography
+                                        </option>
+
+                                        <option value="event">
+                                            Event Photography
+                                        </option>
+
+                                        <option value="other">
+                                            Other / Bespoke Project
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- DATE -->
+
+                                <div class="col-md-6">
+
+                                    <label
+                                        for="date"
+                                        class="form-label">
+
+                                        Preferred Date
+
+                                    </label>
+
+                                    <input
+                                        type="date"
+                                        class="form-control"
+                                        id="date"
+                                        name="preferred_date">
+
+                                </div>
+
+
+                                <!-- LOCATION -->
+
+                                <div class="col-md-6">
+
+                                    <label
+                                        for="location"
+                                        class="form-label">
+
+                                        Location
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="location"
+                                        name="location"
+                                        placeholder="Location / Venue">
+
+                                </div>
+
+
+                                <!-- GUESTS -->
+
+                                <div class="col-md-6">
+
+                                    <label
+                                        for="guests"
+                                        class="form-label">
+
+                                        Number of People
+
+                                    </label>
+
+                                    <select
+                                        class="form-select"
+                                        id="guests"
+                                        name="people">
+
+                                        <option value="">
+                                            Select
+                                        </option>
+
+                                        <option value="1">
+                                            1 person
+                                        </option>
+
+                                        <option value="2-5">
+                                            2–5 people
+                                        </option>
+
+                                        <option value="6-20">
+                                            6–20 people
+                                        </option>
+
+                                        <option value="21-50">
+                                            21–50 people
+                                        </option>
+
+                                        <option value="50+">
+                                            More than 50
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- MESSAGE -->
+
+                                <div class="col-12">
+
+                                    <label
+                                        for="message"
+                                        class="form-label">
+
+                                        Tell Me About Your Project *
+
+                                    </label>
+
+                                    <textarea
+                                        class="form-control"
+                                        id="message"
+                                        name="message"
+                                        placeholder="Tell me about your plans, the type of photography you need, your location and anything else you'd like me to know..."
+                                        required></textarea>
+
+                                </div>
+
+
+                                <!-- CHECKBOX -->
+
+                                <div class="col-12">
+
+                                    <div class="enquiry-check">
+
+                                        <input
+                                            type="checkbox"
+                                            id="consent"
+                                            name="consent"
+                                            required>
+
+                                        <label for="consent">
+
+                                            I agree to Malcolm Lismore Photography
+                                            contacting me regarding this enquiry.
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- SUBMIT -->
+
+                                <div class="col-12">
+
+                                    <button
+                                        type="submit"
+                                        class="enquiry-submit">
+
+                                        Send Enquiry
+
+                                        <i class="bi bi-arrow-right"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROCESS
+========================================================= -->
+
+<section class="enquiry-process">
+
+    <div class="container">
+
+        <div class="process-heading">
+
+            <p class="section-eyebrow">
+                WHAT HAPPENS NEXT,
+            </p>
+
+
+            <h2>
+
+                A simple process,
+                <span>Personal Approach.</span>
+
+            </h2>
+
+
+            <p>
+
+                From your first message to receiving
+                your finished photographs, everything
+                is designed to be relaxed and straightforward.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="process-card">
+
+                    <span class="process-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Send your enquiry
+                    </h3>
+
+                    <p>
+
+                        Tell me about your photography
+                        requirements, preferred date,
+                        location and plans.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="process-card">
+
+                    <span class="process-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Let's talk
+                    </h3>
+
+                    <p>
+
+                        I'll review your enquiry and
+                        get in touch to discuss availability,
+                        ideas and the best approach.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="process-card">
+
+                    <span class="process-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Capture the story
+                    </h3>
+
+                    <p>
+
+                        Once everything is arranged,
+                        I'll focus on creating natural,
+                        memorable photographs for you.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL NOTE
+========================================================= -->
+
+<section class="enquiry-note">
+
+    <div class="container">
+
+        <div class="enquiry-note-inner">
+
+            <p class="section-eyebrow">
+                HAVE A QUESTION?
+            </p>
+
+
+            <h2>
+                Not sure what you need?
+            </h2>
+
+
+            <p>
+
+                That's completely fine. You don't need
+                to have everything planned before getting
+                in touch. Send me a message with whatever
+                you already know and we can work out the
+                details together.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="row gy-5">
+
+
+            <div class="col-lg-5">
+
+                <a href="../index.html"
+                   class="footer-brand">
+
+                    <span>
+                        MALCOLM LISMORE
+                    </span>
+
+                    <small>
+                        PHOTOGRAPHY
+                    </small>
+
+                </a>
+
+
+                <p class="footer-description">
+
+                    Scottish landscape, wildlife,
+                    wedding, portrait and event photography.
+
+                </p>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h4>
+                    Explore
+                </h4>
+
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="portfolio.html">
+                            Portfolio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h4>
+                    Information
+                </h4>
+
+
+                <ul>
+
+                    <li>
+                        <a href="pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="enquiry.html">
+                            Enquire
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-3">
+
+                <h4>
+                    Follow
+                </h4>
+
+
+                <div class="social-links">
+
+                    <a href="#"
+                       aria-label="Instagram">
+
+                        <i class="bi bi-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                       aria-label="Facebook">
+
+                        <i class="bi bi-facebook"></i>
+
+                    </a>
+
+                </div> 
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © <span id="currentYear"></span>
+                Malcolm Lismore Photography.
+                All rights reserved.
+
+            </p>
+
+
+            <p>
+                Designed & developed with care.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- =========================================================
+     CUSTOM JS
+========================================================= -->
+
+<script src="../assets/js/main.js"></script>
+
+
+<!-- =========================================================
+     CURRENT YEAR
+========================================================= -->
+
+<script>
+
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+</script>
+
+
+<!-- =========================================================
+     FORM DEMO MESSAGE
+========================================================= -->
+
+<script>
+
+    const enquiryForm = document.querySelector(".enquiry-form");
+
+    if (enquiryForm) {
+
+        enquiryForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            alert(
+                "Thank you for your enquiry. " +
+                "This form is ready for backend/email integration."
+            );
+
+        });
+
+    }
+
+</script>
+
+</body>
+
+</html>
+
